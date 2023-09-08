@@ -1,6 +1,9 @@
 {{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
 
 <div class="site-header-content outer{{#match @custom.header_style "Left aligned"}} left-aligned{{/match}}{{#unless @custom.show_publication_cover}}{{#match @custom.header_style "Hidden"}} no-content{{/match}}{{/unless}}">
+
     {{#if @custom.show_publication_cover}}
         {{#if @site.cover_image}}
             {{!-- This is a responsive image, it loads different sizes depending on device
@@ -31,29 +34,21 @@
             {{/if}}
         </div>
     {{/match}}
-<div class="aura-container">
-    <div class="aura"></div>
-</div>
-<svg class='animated'>
-  <filter id="wavy">
-    <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" speed="2">
-      <animate attributeName="baseFrequency" dur="60s" values="0.02; 0.005; 0.02" repeatCount="indefinite">
-    </feTurbulence>
-    <feDisplacementMap in="SourceGraphic" scale="30"></feTurbulence>
-  </filter>
-</svg>
 
 </div>
-{{#post}}
-{{!-- Everything inside the #post block pulls data from the page --}}
 
-<main id="site-main" class="site-main">
-<article class="article {{post_class}}">
-    <section class="gh-content gh-canvas">
-        {{content}}
-    </section>
+{{!-- The main content area --}}
+<main id="site-main" class="site-main outer">
+<div class="inner posts">
 
-</article>
+    <div class="post-feed">
+        {{#foreach posts}}
+            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+            {{> "post-card"}}
+        {{/foreach}}
+    </div>
+
+    {{pagination}}
+
+</div>
 </main>
-
-{{/post}}
