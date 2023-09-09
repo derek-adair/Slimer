@@ -1,0 +1,7 @@
+routes:
+  /: index
+
+collections:
+  /blog/:
+    permalink: /blog/{slug}/
+    template: posts
