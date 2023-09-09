@@ -40,16 +40,15 @@
 }
 
 .aura:after {
-  box-shadow: 0 0 calc(var(--bor)/2) #61a8c3ff, inset 0 0 var(--bor) #61a8c3ff;
+  box-shadow: 0 0 calc(var(--bor)/2) #83c5dbff, inset 0 0 var(--bor) #83c5dbff;
 }
 
 @keyframes move {
   0% {
     box-shadow: 0 0 var(--boxShadow) #83c5dbff, inset 0 0 var(--boxShadow) #83c5dbff;
-    filter: hue-rotate(0deg);
   }
   20% {
-    box-shadow: 0 0 60px #83c5dbff, inset 0 0 60px #83c5dbff;
+    box-shadow: 0 0 80px #83c5dbff, inset 0 0 80px #83c5dbff;
   }
 
   40% {
@@ -63,7 +62,6 @@
   }
   100% {
     box-shadow: 0 0 var(--boxShadow) #83c5dbff, inset 0 0 var(--boxShadow) #83c5dbff;
-    filter: hue-rotate(30deg);
   }
 }
 
