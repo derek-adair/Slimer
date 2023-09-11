@@ -42,6 +42,14 @@
     <feDisplacementMap in="SourceGraphic" scale="30"></feTurbulence>
   </filter>
 </svg>
+<svg class='animated'>
+  <filter id="tight">
+    <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" speed=".002">
+      <animate attributeName="baseFrequency" dur="190s" values="0.02; 0.002; 0.02" repeatCount="indefinite">
+    </feTurbulence>
+    <feDisplacementMap in="SourceGraphic" scale="15"></feTurbulence>
+  </filter>
+</svg>
 
 </div>
 {{#post}}

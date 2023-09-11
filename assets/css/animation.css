@@ -4,10 +4,9 @@
   --smoke-bor: calc(var(--smoke-size) / 30);
   --smoke-boxShadow: calc(var(--smoke-size) / 12);
 
-  --portal-size: 50vw;
-  --portal-s: calc(var(--portal-size) / 6);
-  --portal-bor: calc(var(--portal-size) / 30);
-  --portal-boxShadow: calc(var(--portal-size) / 12);
+  --portal-size: 60vw;
+  --portal-bor: calc(var(--portal-size) / 8);
+  --portal-boxShadow: calc(var(--portal-size) / 9);
 }
 
 .site-header-content{overflow:hidden;}
@@ -21,15 +20,21 @@
   	left: -30%;
 }
 
-.smoke,
-.portal{
-  filter: url(#wavy) blur(1px);
+.portal-container{
+	width: var(--portal-size);
+	height: var(--portal-size);
 }
 
 .smoke {
+  filter: url(#wavy) blur(1px);
   transform: translate(0%, -15%);
   width: 110%;
   height: var(--smoke-size);
+}
+.portal {
+    width: var(--portal-size);
+    height: var(--portal-size);
+    filter: url(#tight) blur(1px);
 }
 
 .portal:before,
@@ -49,10 +54,22 @@
 
 .portal:before,
 .portal:after{
+
+  top: calc(var(--portal-bor)* -.8);
+  left: calc(var(--portal-bor)* -.8);
+  right: calc(var(--portal-bor)* -.65);
+  bottom: calc(var(--portal-bor)* -.65);
   border-radius: 50%;
   border: var(--portal-bor) solid #fff;
 }
 
+@media (min-width: 700px){
+    .portal:before,
+    .portal:after{
+      right: calc(var(--portal-bor)* -.75);
+      bottom: calc(var(--portal-bor)* -.75);
+    }
+}
 .portal:before,
 .smoke:before {
   -webkit-box-reflect: below 10px
@@ -76,45 +93,45 @@
 
 @keyframes smoke {
   0% {
-    box-shadow: 0 0 var(--smoke-boxShadow) #83c5dbff, inset 0 0 var(--smoke-boxShadow) #83c5dbff;
+    box-shadow:  inset 0 0 var(--smoke-boxShadow) #83c5dbff;
   }
   20% {
-    box-shadow: 0 0 80px #83c5dbff, inset 0 0 80px #83c5dbff;
+    box-shadow:  inset 0 0 80px #83c5dbff;
   }
 
   40% {
-    box-shadow: 0 0 65px #83c5dbff, inset 0 0 65px #83c5dbff;
+    box-shadow:  inset 0 0 65px #83c5dbff;
   }
   60% {
-    box-shadow: 0 0 80px #83c5dbff, inset 0 0 80px #83c5dbff;
+    box-shadow:  inset 0 0 80px #83c5dbff;
   }
   80% {
-    box-shadow: 0 0 90px #83c5dbff, inset 0 0 90px #83c5dbff;
+    box-shadow:  inset 0 0 90px #83c5dbff;
   }
   100% {
-    box-shadow: 0 0 var(--smoke-boxShadow) #83c5dbff, inset 0 0 var(--smoke-boxShadow) #83c5dbff;
+    box-shadow:  inset 0 0 var(--smoke-boxShadow) #83c5dbff;
   }
 }
 
 @keyframes portal {
   0% {
-    box-shadow: 0 0 var(--portal-boxShadow) #83c5dbff, inset 0 0 var(--portal-boxShadow) #83c5dbff;
+    box-shadow: inset 0 0 var(--portal-boxShadow) #83c5dbff;
   }
   20% {
-    box-shadow: 0 0 80px #83c5dbff, inset 0 0 80px #83c5dbff;
+    box-shadow: inset 0 0 80px #83c5dbff;
   }
 
   40% {
-    box-shadow: 0 0 65px #83c5dbff, inset 0 0 65px #83c5dbff;
+    box-shadow: inset 0 0 65px #83c5dbff;
   }
   60% {
-    box-shadow: 0 0 80px #83c5dbff, inset 0 0 80px #83c5dbff;
+    box-shadow: inset 0 0 80px #83c5dbff;
   }
   80% {
-    box-shadow: 0 0 90px #83c5dbff, inset 0 0 90px #83c5dbff;
+    box-shadow: inset 0 0 90px #83c5dbff;
   }
   100% {
-    box-shadow: 0 0 var(--portal-boxShadow) #83c5dbff, inset 0 0 var(--portal-boxShadow) #83c5dbff;
+    box-shadow: inset 0 0 var(--portal-boxShadow) #83c5dbff;
   }
 }
 
@@ -122,12 +139,15 @@ svg.animated {
   width: 0;
   height: 0;
 }
-
-.circle-frame {
+.portal-frame {
     width: var(--portal-size);
     height: var(--portal-size);
-}
-.circle-frame img{
+    overflow: hidden;
     border-radius: 50%;
-    object-fit: cover;
+}
+.portal-frame img{
+    width: var(--portal-size);
+    height: var(--portal-size);
+    position: absolute;
+    border-radius: 50%;
 }
