@@ -55,8 +55,8 @@
 .portal:before,
 .portal:after{
 
-  top: calc(var(--portal-bor)* -.8);
-  left: calc(var(--portal-bor)* -.8);
+  top: -1vw;
+  left: -.5vw;
   right: calc(var(--portal-bor)* -.5);
   bottom: calc(var(--portal-bor)* -.5);
   border-radius: 50%;
@@ -70,7 +70,6 @@
       bottom: calc(var(--portal-bor)* -.65);
     }
 }
-.portal:before,
 .smoke:before {
   -webkit-box-reflect: below 10px
     linear-gradient(transparent, transparent, #0002);
