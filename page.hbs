@@ -1,42 +1,47 @@
 {{!< default}}
 
-{{!-- The tag above means: insert everything in this file
-into the {body} tag of the default.hbs template --}}
-
-
 {{#post}}
+<div class="site-header-content outer{{#match @custom.header_style "Left aligned"}} left-aligned{{/match}}{{#unless @custom.show_publication_cover}}{{#match @custom.header_style "Hidden"}} no-content{{/match}}{{/unless}}">
+    {{#if feature_image}}
+            {{!-- This is a responsive image, it loads different sizes depending on device
+            https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
+            <img class="site-header-cover"
+                src="{{img_url feature_image}}"
+                alt="{{@site.title}}"
+            />
+        {{/if}}
+
+        <div class="site-header-inner inner">
+                    {{#if title}}<h1 class="site-title">{{title}}</h1>{{/if}}
+            {{#if feature_image_caption}}
+                <p class="site-description">{{feature_image_caption}}</p>
+            {{/if}}
+        </div>
+<div class="smoke-container">
+    <div class="smoke"></div>
+</div>
+<svg class='animated'>
+  <filter id="wavy">
+    <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" speed=".002">
+      <animate attributeName="baseFrequency" dur="190s" values="0.02; 0.002; 0.02" repeatCount="indefinite">
+    </feTurbulence>
+    <feDisplacementMap in="SourceGraphic" scale="30"></feTurbulence>
+  </filter>
+</svg>
+<svg class='animated'>
+  <filter id="tight">
+    <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" speed=".002">
+      <animate attributeName="baseFrequency" dur="190s" values="0.02; 0.002; 0.02" repeatCount="indefinite">
+    </feTurbulence>
+    <feDisplacementMap in="SourceGraphic" scale="15"></feTurbulence>
+  </filter>
+</svg>
+
+</div>
 {{!-- Everything inside the #post block pulls data from the page --}}
 
 <main id="site-main" class="site-main">
 <article class="article {{post_class}}">
-
-    {{#match @page.show_title_and_feature_image}}
-        <header class="article-header gh-canvas">
-
-            <h1 class="article-title">{{title}}</h1>
-
-            {{#if feature_image}}
-                <figure class="article-image">
-                    {{!-- This is a responsive image, it loads different sizes depending on device
-                    https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
-                    <img
-                        srcset="{{img_url feature_image size="s"}} 300w,
-                                {{img_url feature_image size="m"}} 600w,
-                                {{img_url feature_image size="l"}} 1000w,
-                                {{img_url feature_image size="xl"}} 2000w"
-                        sizes="(min-width: 1400px) 1400px, 92vw"
-                        src="{{img_url feature_image size="xl"}}"
-                        alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
-                    />
-                    {{#if feature_image_caption}}
-                        <figcaption>{{feature_image_caption}}</figcaption>
-                    {{/if}}
-                </figure>
-            {{/if}}
-
-        </header>
-    {{/match}}
-
     <section class="gh-content gh-canvas">
         {{content}}
     </section>
