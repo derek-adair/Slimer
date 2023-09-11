@@ -5,7 +5,7 @@
   --smoke-boxShadow: calc(var(--smoke-size) / 12);
 
   --portal-size: 60vw;
-  --portal-bor: calc(var(--portal-size) / 8);
+  --portal-bor: calc(var(--portal-size) / 15);
   --portal-boxShadow: calc(var(--portal-size) / 9);
 }
 
@@ -21,8 +21,8 @@
 }
 
 .portal-container{
-	width: var(--portal-size);
-	height: var(--portal-size);
+    width: var(--portal-size);
+    height: var(--portal-size);
 }
 
 .smoke {
@@ -57,8 +57,8 @@
 
   top: calc(var(--portal-bor)* -.8);
   left: calc(var(--portal-bor)* -.8);
-  right: calc(var(--portal-bor)* -.65);
-  bottom: calc(var(--portal-bor)* -.65);
+  right: calc(var(--portal-bor)* -.5);
+  bottom: calc(var(--portal-bor)* -.5);
   border-radius: 50%;
   border: var(--portal-bor) solid #fff;
 }
@@ -66,8 +66,8 @@
 @media (min-width: 700px){
     .portal:before,
     .portal:after{
-      right: calc(var(--portal-bor)* -.75);
-      bottom: calc(var(--portal-bor)* -.75);
+      right: calc(var(--portal-bor)* -.65);
+      bottom: calc(var(--portal-bor)* -.65);
     }
 }
 .portal:before,
@@ -142,8 +142,8 @@ svg.animated {
 .portal-frame {
     width: var(--portal-size);
     height: var(--portal-size);
-    overflow: hidden;
     border-radius: 50%;
+    margin: 0 auto;
 }
 .portal-frame img{
     width: var(--portal-size);
