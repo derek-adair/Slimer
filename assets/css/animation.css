@@ -1,51 +1,82 @@
 :root {
-  --size: 110vh;
-  --s: calc(var(--size) / 6);
-  --bor: calc(var(--size) / 30);
-  --boxShadow: calc(var(--size) / 12);
+  --smoke-size: 110vh;
+  --smoke-s: calc(var(--smoke-size) / 6);
+  --smoke-bor: calc(var(--smoke-size) / 30);
+  --smoke-boxShadow: calc(var(--smoke-size) / 12);
+
+  --portal-size: 50vw;
+  --portal-s: calc(var(--portal-size) / 6);
+  --portal-bor: calc(var(--portal-size) / 30);
+  --portal-boxShadow: calc(var(--portal-size) / 12);
 }
 
 .site-header-content{overflow:hidden;}
 
 /* Aura code lovingly stolen from https://codepen.io/BlackStar1991/pen/xxVOdJb?editors=1100 */
-.aura-container{
+.smoke-container{
 	bottom: 0; 
 	position: absolute;
   	height: 30px;
 	width: 140%;
   	left: -30%;
 }
-.aura {
+
+.smoke,
+.portal{
+  filter: url(#wavy) blur(1px);
+}
+
+.smoke {
   transform: translate(0%, -15%);
   width: 110%;
-  filter: url(#wavy) blur(1px);
-  	height: var(--size);
+  height: var(--smoke-size);
 }
 
-.aura:before,
-.aura:after {
+.portal:before,
+.portal:after,
+.smoke:before,
+.smoke:after {
   content: "";
   position: absolute;
-  top: var(--s);
-  left: var(--s);
-  right: var(--s);
-  border-radius: 50%;
-  border: var(--bor) solid #fff;
 }
-.aura:before {
-  box-shadow: 0 0 var(--boxShadow) #61a8c3ff, inset 0 0 var(--boxShadow) #61a8c3ff;
+.smoke:before,
+.smoke:after {
+  top: var(--smoke-s);
+  left: var(--smoke-s);
+  right: var(--smoke-s);
+  border: var(--smoke-bor) solid #fff;
+}
+
+.portal:before,
+.portal:after{
+  border-radius: 50%;
+  border: var(--portal-bor) solid #fff;
+}
+
+.portal:before,
+.smoke:before {
   -webkit-box-reflect: below 10px
     linear-gradient(transparent, transparent, #0002);
-  animation: move 5s linear infinite;
+}
+    .portal:before{
+        box-shadow: 0 0 var(--portal-boxShadow) #61a8c3ff, inset 0 0 var(--portal-boxShadow) #61a8c3ff;
+        animation: portal 5s linear infinite;
+    }
+    .smoke:before {
+        box-shadow: 0 0 var(--smoke-boxShadow) #61a8c3ff, inset 0 0 var(--smoke-boxShadow) #61a8c3ff;
+        animation: smoke 5s linear infinite;
+    }
+
+.smoke:after {
+  box-shadow: 0 0 calc(var(--smoke-bor)/2) #83c5dbff, inset 0 0 var(--smoke-bor) #83c5dbff;
+}
+.portal:after {
+  box-shadow: 0 0 calc(var(--portal-bor)/2) #83c5dbff, inset 0 0 var(--portal-bor) #83c5dbff;
 }
 
-.aura:after {
-  box-shadow: 0 0 calc(var(--bor)/2) #83c5dbff, inset 0 0 var(--bor) #83c5dbff;
-}
-
-@keyframes move {
+@keyframes smoke {
   0% {
-    box-shadow: 0 0 var(--boxShadow) #83c5dbff, inset 0 0 var(--boxShadow) #83c5dbff;
+    box-shadow: 0 0 var(--smoke-boxShadow) #83c5dbff, inset 0 0 var(--smoke-boxShadow) #83c5dbff;
   }
   20% {
     box-shadow: 0 0 80px #83c5dbff, inset 0 0 80px #83c5dbff;
@@ -61,7 +92,29 @@
     box-shadow: 0 0 90px #83c5dbff, inset 0 0 90px #83c5dbff;
   }
   100% {
-    box-shadow: 0 0 var(--boxShadow) #83c5dbff, inset 0 0 var(--boxShadow) #83c5dbff;
+    box-shadow: 0 0 var(--smoke-boxShadow) #83c5dbff, inset 0 0 var(--smoke-boxShadow) #83c5dbff;
+  }
+}
+
+@keyframes portal {
+  0% {
+    box-shadow: 0 0 var(--portal-boxShadow) #83c5dbff, inset 0 0 var(--portal-boxShadow) #83c5dbff;
+  }
+  20% {
+    box-shadow: 0 0 80px #83c5dbff, inset 0 0 80px #83c5dbff;
+  }
+
+  40% {
+    box-shadow: 0 0 65px #83c5dbff, inset 0 0 65px #83c5dbff;
+  }
+  60% {
+    box-shadow: 0 0 80px #83c5dbff, inset 0 0 80px #83c5dbff;
+  }
+  80% {
+    box-shadow: 0 0 90px #83c5dbff, inset 0 0 90px #83c5dbff;
+  }
+  100% {
+    box-shadow: 0 0 var(--portal-boxShadow) #83c5dbff, inset 0 0 var(--portal-boxShadow) #83c5dbff;
   }
 }
 
@@ -70,3 +123,11 @@ svg.animated {
   height: 0;
 }
 
+.circle-frame {
+    width: var(--portal-size);
+    height: var(--portal-size);
+}
+.circle-frame img{
+    border-radius: 50%;
+    object-fit: cover;
+}
