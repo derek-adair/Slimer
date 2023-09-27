@@ -1,0 +1,67 @@
+/* CSS */
+.btn {
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid #61a8c3ff;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px #83c5dbff, 2px 2px 0px 0px #83c5dbff, 3px 3px 0px 0px #83c5dbff, 4px 4px 0px 0px #83c5dbff, 5px 5px 0px 0px #83c5dbff;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .btn{
+    padding: 0.25em 0.75em;
+  }
+}
+
+
+
+/* CSS */
+.btn-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #61a8c3ff;
+  --text-color: #496465ff;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--text-color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-89:hover,
+.btn-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+  color: var(--color);
+}
+
+.btn-89:active {
+  background: var(--color);
+  color: #fff;
+}
