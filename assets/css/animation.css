@@ -4,7 +4,7 @@
   --smoke-bor: calc(var(--smoke-size) / 30);
   --smoke-boxShadow: calc(var(--smoke-size) / 12);
 
-  --portal-size: 60vw;
+  --portal-size: 50vh;
   --portal-bor: calc(var(--portal-size) / 15);
   --portal-boxShadow: calc(var(--portal-size) / 9);
 }
