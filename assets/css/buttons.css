@@ -1,4 +1,9 @@
 /* CSS */
+.btn-centered{
+    display: block;
+    margin:0 auto;
+}
+/* CSS */
 .btn {
   letter-spacing: 2px;
   text-decoration: none;
@@ -65,3 +70,4 @@
   background: var(--color);
   color: #fff;
 }
+
