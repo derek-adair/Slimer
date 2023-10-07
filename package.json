@@ -1,7 +1,7 @@
 {
     "name": "slimer",
     "description": "A fork of the default theme for the Ghost publishing platform",
-    "version": "5.7.0",
+    "version": "5.7.1",
     "engines": {
         "ghost": ">=5.0.0"
     },

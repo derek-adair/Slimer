@@ -1354,9 +1354,8 @@ headings, text, images and lists. We deal with cards lower down. */
     font-family: var(--font-serif);
 }
 
-/* Add back a top margin to all headings, unless a heading
-is the very first element in the post content */
-.gh-content > [id]:not(:first-child) {
+/* Add back a top margin to all headings */
+.gh-content > [id]{
     margin: 2em 0 0;
 }
 

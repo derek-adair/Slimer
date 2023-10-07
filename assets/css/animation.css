@@ -142,7 +142,7 @@ svg.animated {
     width: var(--portal-size);
     height: var(--portal-size);
     border-radius: 50%;
-    margin: 0 auto;
+    margin: 5rem auto;
 }
 .portal-frame img{
     width: var(--portal-size);

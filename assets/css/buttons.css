@@ -1,10 +1,11 @@
 /* CSS */
-button.btn-centered{
+.btn-centered{
     display:block;
     margin:0 auto;
 }
-p:has(> a.btn-centered) {
-    text-align:center;
+a.btn-centered{
+    max-width: 50%;
+    text-align: center;
 }
 
 /* CSS */
@@ -38,9 +39,6 @@ p:has(> a.btn-centered) {
 
 
 /* CSS */
-a.btn-89{
-    display: inline;
-}
 a.btn-89,
 .btn-89 {
   --b: 3px;   /* border thickness */
