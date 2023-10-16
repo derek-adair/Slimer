@@ -1,0 +1,3 @@
+[submodule "assets/js/embedded-contact"]
+	path = assets/js/embedded-contact
+	url = https://github.com/derek-adair/embedded-contact
