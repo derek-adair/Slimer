@@ -1,0 +1,33 @@
+textarea, input {
+    font-size: 16px;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid rgba(10, 180, 180, 1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: rgba(20, 20, 20, .2);
+    color: white !important;
+    outline: none;
+    width: 100%
+}
+input{
+    margin: 15px 0;
+}
+form div.tiny-input.left{
+    float: left;
+}
+form div.tiny-input.right{
+    float: right;
+}
+form div.tiny-input{
+    width: 48%;
+}
+.tiny-input{
+    width: 50%;
+}
+
+*[role="alert"]{
+color: red;
+}
+input[type=checkbox]{width: auto; margin-left: 1rem;}
