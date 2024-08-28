@@ -1,0 +1,432 @@
+{{!< default}}
+
+{{#post}}
+    <div class="site-header-content outer{{#match @custom.header_style "Left aligned"}} left-aligned{{/match}}{{#unless @custom.show_publication_cover}}{{#match @custom.header_style "Hidden"}} no-content{{/match}}{{/unless}}">
+	<!-- This is the modal -->
+	<div id="gallery-modal" uk-modal>
+	    <div class="uk-modal-dialog uk-width-1 uk-height-1" uk-filter="target: .js-filter">
+		<div class="uk-modal-header">
+		    <h2 class="uk-modal-title"> <button class="uk-modal-close-default" type="button" uk-close></button>Photo Gallery</h2>
+		    <ul class="uk-subnav uk-subnav-pill slimer-scroll-flex">
+			<li class="uk-active" uk-filter-control><a href="#">All</a></li>
+			<li uk-filter-control=".tag-exterior"><a href="#">Exterior</a></li>
+			<li uk-filter-control=".tag-bedrooms"><a href="#">Bedrooms</a></li>
+			<li uk-filter-control=".tag-bathroom"><a href="#">Bathroom</a></li>
+			<li uk-filter-control=".tag-kitchen"><a href="#">Kitchen</a></li>
+			<li uk-filter-control=".tag-living-area"><a href="#">Living Area</a></li>
+			<li uk-filter-control=".tag-dining"><a href="#">Dining</a></li>
+			<li uk-filter-control=".tag-common-area"><a href="#">Common Area</a></li>
+			<li uk-filter-control=".tag-amenities"><a href="#">Amenities</a></li>
+			<li uk-filter-control=".tag-family"><a href="#">Family</a></li>
+			<li uk-visible@m uk-filter-control=".tag-winter"><a href="#">Winter</a></li>
+		    </ul>
+		</div>
+		<div class="uk-modal-body">
+		    <div >
+
+
+
+			<ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid uk-lightbox="animation: slide">
+			    <li class="tag-exterior">
+				<a uk-inline href="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2023/10/257258339_945472482721670_6090587362506355255_n-cropped.jpg">
+				    <img src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2023/10/257258339_945472482721670_6090587362506355255_n-cropped.jpg" alt="" />
+				</a>
+			    </li>
+			    <li class="tag-exterior">
+				<a uk-inline href="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg">
+				    <img src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+				</a>
+			    </li>
+			    <li class="tag-bedrooms">
+				<div class="uk-card uk-card-default uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-bedrooms">
+				<div class="uk-card uk-card-default uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-dining">
+				<div class="uk-card uk-card-secondary uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-dining">
+				<div class="uk-card uk-card-secondary uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-exterior">
+				<div class="uk-card uk-card-primary uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-common-area">
+				<div class="uk-card uk-card-secondary uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-exterior">
+				<div class="uk-card uk-card-primary uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-bedrooms">
+				<div class="uk-card uk-card-default uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-exterior">
+				<div class="uk-card uk-card-primary uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-common-area">
+				<div class="uk-card uk-card-secondary uk-card-body">Item</div>
+			    </li>
+			</ul>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<div uk-slider class="uk-hidden@m">
+	    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+		<div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+		    <div class="uk-width-1">
+			<a href="#gallery-modal" uk-toggle>
+			    <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+			</a>
+		    </div>
+		    <div class="uk-width-1">
+			<a href="#gallery-modal" uk-toggle>
+			    <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+			</a>
+		    </div>
+		    <div class="uk-width-1">
+			<a href="#gallery-modal" uk-toggle>
+			    <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+			</a>
+		    </div>
+		    <div class="uk-width-1">
+			<a href="#gallery-modal" uk-toggle>
+			    <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+			</a>
+		    </div>
+		    <div class="uk-width-1">
+			<a href="#gallery-modal" uk-toggle>
+			    <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+			</a>
+		    </div>
+		    <div class="uk-width-1">
+			<a href="#gallery-modal" uk-toggle>
+			    <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+			</a>
+		    </div>
+		</div>
+
+		<a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+		<a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+
+	    </div>
+
+	    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+	</div>
+	<div class="uk-grid-collapse uk-visible@m" uk-grid uk-lightbox="animation: slide">
+	    <div class="uk-width-1@s uk-width-2-3@m uk-width-1-2@l">
+		<a href="#gallery-modal" uk-toggle>
+		    <img style="padding: 0 .2rem .2rem 0;" src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="">
+		</a>
+
+	    </div>    
+	    <div class="uk-width-1-3@m uk-width-1-2@l uk-visible@m">
+		<div class="uk-grid-collapse uk-child-width-1@m uk-child-width-1-2@l" uk-grid>
+		    <a href="#gallery-modal" uk-toggle>
+			<img style="padding: 0 .2rem .2rem 0;" src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+		    </a>
+		    <a href="#gallery-modal" uk-toggle>
+			<img style="padding: 0 .2rem .2rem 0;" src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+		    </a>
+		    <a class="uk-visible@l" href="#gallery-modal" uk-toggle>
+			<img style="padding: 0 .2rem .2rem 0;" src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+		    </a>
+		    <a class="uk-visible@l" href="#gallery-modal" uk-toggle>
+			<img style="padding: 0 .2rem .2rem 0;" src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+		    </a>
+
+		</div>
+	    </div>
+	</div>
+	{{#match @custom.energy_beam}}
+	    <div class="smoke-container">
+		<div class="smoke"></div>
+	    </div>
+
+	    <svg class='animated'>
+		<filter id="wavy">
+		<feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" speed=".002">
+		<animate attributeName="baseFrequency" dur="190s" values="0.02; 0.002; 0.02" repeatCount="indefinite">
+		</feTurbulence>
+		<feDisplacementMap in="SourceGraphic" scale="30"></feTurbulence>
+		</filter>
+	    </svg>
+	    <svg class='animated'>
+		<filter id="tight">
+		<feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" speed=".002">
+		<animate attributeName="baseFrequency" dur="190s" values="0.02; 0.002; 0.02" repeatCount="indefinite">
+		</feTurbulence>
+		<feDisplacementMap in="SourceGraphic" scale="15"></feTurbulence>
+		</filter>
+	    </svg>
+	{{/match}}
+
+    </div>
+    {{!-- Everything inside the #post block pulls data from the page --}}
+
+    <main id="site-main" class="site-main">
+	<article class="article {{post_class}}">
+	    <section class="gh-content gh-canvas">
+		{{#if title}}<h1 class="site-title">{{title}}</h1>{{/if}}
+		<div class="uk-grid">
+		    <div class="uk-width-1-1 uk-width-2-3@m">
+			<div class="uk-grid">
+			    <div class="width-1-3">
+				<span><i class="fa-solid fa-door-open"></i>5 bedrooms</span>
+			    </div>
+			    <div class="width-1-3">
+				<span><i class="fa-solid fa-toilet"></i>3.5 bathrooms</span>
+			    </div>
+			    <div class="width-1-3">
+				<span><i class="fa-solid fa-users"></i>Sleeps 10</span>
+			    </div>
+			    <div class="width-1-1 uk-grid">
+				<h2 class="uk-width-1-1">Popular Amenities</h2>
+				<div class="uk-width-1-2">
+				    <span><i class="fa-solid fa-hot-tub-person"></i> Hot Tub</span>
+				</div>
+				<div class="uk-width-1-2">
+				    <span><i class="fa-solid fa-washing-machine"></i> Washer</span>
+				</div>
+				<div class="uk-width-1-2">
+				    <span><i class="fa-solid fa-grill-hot"></i> Barbecue Grill</span>
+				</div>
+				<div class="uk-width-1-2">
+				    <span><i class="fa-solid fa-store"></i> Outdoor Space</span>
+				</div>
+				<div class="uk-width-1-2">
+				    <span><i class="fa-solid fa-utensils"></i> Kitchen x2</span>
+				</div>
+				<div class="uk-width-1-2">
+				    <span><i class="fa-solid fa-fireplace"></i> Fireplace</span>
+				</div>
+				<a href="#all-amenities" uk-toggle>See all amenities</a>
+				<div id="all-amenities" uk-modal>
+				    <div class="uk-modal-dialog uk-width-1 uk-height-1">
+					<div class="uk-modal-header">
+					    <h2 class="uk-modal-title"> <button class="uk-modal-close-default" type="button" uk-close></button>Amenities</h2>
+					</div>
+					<div class="uk-modal-body uk-grid">
+					    <h3 class="uk-width-1-1">Top family-friendly amenities</h3>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-gamepad"></i> Toys/Games</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-pool-8-ball"></i> Game Room</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-microwave"></i> Microwave</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-fire-burner"></i> Stove x2</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-couch"></i> Living/Dining area</span>
+					    </div>
+					    <h3 class="uk-width-1-1">Popular amenities</h3>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-hot-tub-person"></i> Hot Tub</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-washing-machine"></i> Washer</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-grill-hot"></i> Barbecue Grill</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-store"></i> Outdoor Space</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-utensils"></i> Kitchen x2</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-fireplace"></i> Fireplace</span>
+					    </div>
+					    <div class="uk-width-1-1">
+						<h3>Languages Spoken</h3>
+						<ul>
+						    <li>English</li>
+						</ul>
+						<h3>Ski</h3>
+						<ul>
+						    <li>Cross-country skiing nearby</li>
+						    <li>Snowboarding nearby</li>
+						    <li>Near breck resort</li>
+						</ul>
+						<h3>Pool/Spa</h3>
+						<ul>
+						    <li>Spa tub</li>
+						</ul>
+						<h3>Pool/Spa</h3>
+						<ul>
+						    <li>Spa tub</li>
+						</ul>
+						<h3>Internet</h3>
+						<ul>
+						    <li>Available in the house: WiFi</li>
+						</ul>
+						<h3>Parking and transportation</h3>
+						<ul>
+						    <li>Car recommended</li>
+						    <li>Onsite parking options include a garage</li>
+						</ul>
+						<h3>Family friendly</h3>
+						<ul>
+						    <li>Children's games</li>
+						    <li>Children's toys</li>
+						</ul>
+						<h3>Kitchen</h3>
+						<ul>
+
+						    <li>Blender</li>
+						    <li>Coffee/tea maker</li>
+						    <li>Cookware, dishware, and utensils</li>
+						    <li>Dishwasher</li>
+						    <li>Ice maker</li>
+						    <li>Kitchen island</li>
+						    <li>Microwave</li>
+						    <li>Oven</li>
+						    <li>Paper towels</li>
+						    <li>Refrigerator</li>
+						    <li>Stovetop</li>
+						    <li>Toaster</li>
+						</ul>
+						<h3>Dining</h3>
+						<ul>
+						    <li>Dining table</li>
+						</ul>
+						<h3>Bedrooms</h3>
+						<ul>
+						    <li>5 bedrooms</li>
+						    <li>Bedsheets provided</li>
+						</ul>
+						<h3>
+						    Bathroom</h3>
+						<ul>
+						    <li>3.5 bathrooms</li>
+						    <li>Bathtub</li>
+						    <li>Bathtub or shower</li>
+						    <li>Hair dryer</li>
+						    <li>Shower</li>
+						    <li>Soap</li>
+						    <li>Toilet paper</li>
+						    <li>Towels provided</li>
+						</ul>
+						<h3>
+						    <li>Living spaces</h3>
+						<ul>
+						    <li>Dining table</li>
+						    <li>Fireplace</li>
+						    <li>Living room</li>
+						</ul>
+						<h3>
+						    Entertainment</h3>
+						<ul>
+
+						    <li>Books</li>
+						    <li>DVD player</li>
+						    <li>Games</li>
+						    <li>Smart TV with cable/satellite channels</li>
+						    <li>Stereo</li>
+						    <li>Video library</li>
+						</ul>
+						<h3>
+						    Outdoor areas</h3>
+						<ul>
+						    <li>Balcony</li>
+						    <li>Barbecue grill</li>
+						</ul>
+						<h3>
+						    Laundry</h3>
+						<ul>
+						    <li>Washing machine</li>
+						</ul>
+						<h3>Work spaces</h3>
+						<ul>
+						    <li>Computer monitor</li>
+						    <li>Desk</li>
+						    <li>Desk chair</li>
+						</ul>
+						<h3>
+						    Comfort</h3>
+						<ul>
+
+						    <li>Heating</li>
+						</ul>
+						<h3>
+						    Pets</h3>
+						<ul>
+						    <li>No pets allowed</li>
+
+						</ul>
+						<h3>Suitability/Accessibility</h3>
+						<ul>
+						    <li>3 steps to reach entrance</li>
+						    <li>No elevator</li>
+						    <li>Smoke-free property</li>
+
+						</ul>
+						<h3>Services and conveniences</h3>
+						<ul>
+						    <li>Housekeeping (on request)</li>
+
+						</ul>
+						<h3>Location highlights</h3>
+						<ul>
+						    <li>In the mountains</li>
+
+						</ul>
+						<h3>Things to do</h3>
+						<ul>
+						    <li>Arcade/game room</li>
+						    <li>Billiards/pool table</li>
+						    <li>Cycling nearby</li>
+						    <li>Fishing nearby</li>
+						    <li>Golfing nearby</li>
+						    <li>Hiking/biking trails nearby</li>
+						    <li>Hunting nearby</li>
+						    <li>Mountain biking nearby</li>
+						    <li>Mountain climbing nearby</li>
+						    <li>Rafting nearby</li>
+						    <li>Rock climbing nearby</li>
+						    <li>Sailing nearby</li>
+						    <li>Sledding nearby</li>
+						    <li>Snowmobiling nearby</li>
+						    <li>Water skiing nearby</li>
+						    <li>Wildlife walks nearby</li>
+						    <li>Windsurfing nearby</li>
+						</ul>
+						<h3>General</h3>
+						<ul>
+						    <li> Housekeeping (on request)</li>
+						</ul>
+
+						<h3>Safety features</h3>
+						<ul>
+						    <li>Carbon monoxide detector (host has indicated there is a carbon monoxide detector on the property)</li>
+						    <li>Smoke detector (host has indicated there is a smoke detector on the property)</li>
+						    <li>First aid kit</li>
+						    <li>Fire extinguisher</li>
+						    <li>Deadbolt lock</li>
+						</ul>
+					    </div>
+					</div>
+				    </div>
+				</div>
+			    </div>
+
+			</div>
+		    </div>
+		    <div class="uk-width-1-1 uk-width-1-3@m">
+			<div style="height: 100px; background-color: black;"></div>
+		    </div>
+		</div>
+		<!--{{content}}-->
+	    </section>
+
+	</article>
+    </main>
+
+{{/post}}

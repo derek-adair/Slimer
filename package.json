@@ -1,7 +1,7 @@
 {
     "name": "slimer",
     "description": "A fork of the default theme for the Ghost publishing platform",
-    "version": "5.7.0",
+    "version": "5.7.2",
     "engines": {
         "ghost": ">=5.0.0"
     },
@@ -88,6 +88,11 @@
         },
         "card_assets": true,
         "custom": {
+            "energy_beam":{
+                "type": "boolean",
+                "group": "sitewide",
+                "default": true
+            },
             "navigation_layout": {
                 "type": "select",
                 "options": [

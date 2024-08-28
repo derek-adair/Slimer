@@ -17,9 +17,11 @@
                 <p class="site-description">{{feature_image_caption}}</p>
             {{/if}}
         </div>
+{{#match @custom.energy_beam}}
 <div class="smoke-container">
     <div class="smoke"></div>
 </div>
+
 <svg class='animated'>
   <filter id="wavy">
     <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" speed=".002">
@@ -36,6 +38,7 @@
     <feDisplacementMap in="SourceGraphic" scale="15"></feTurbulence>
   </filter>
 </svg>
+{{/match}}
 
 </div>
 {{!-- Everything inside the #post block pulls data from the page --}}
