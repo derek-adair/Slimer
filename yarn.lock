@@ -624,6 +624,11 @@ agent-base@6:
   dependencies:
     debug "4"
 
+air-datepicker@^3.5.3:
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/air-datepicker/-/air-datepicker-3.5.3.tgz#55aa739f1ae552f145c332904aad5db4563ae980"
+  integrity sha512-Elf9gLhv/jidN1+TfeRJYMQRUfYx5apXw2dY5DuAMPRnNtQ4Iw9fTTJK772osmXSUB9xQ2Y8Q1Pt6pgBOQLPQw==
+
 ajv@^6.12.3:
   version "6.12.6"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
