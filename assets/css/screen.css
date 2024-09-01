@@ -3048,3 +3048,14 @@ ul.slimer-scroll-flex{
 }
 
 .uk-modal-body{ padding: 0 20px 20px 20px;}
+html { font-size: 9px !important; }
+
+div.rounded-border{
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.image-link > h4,
+.image-link > p,  {
+    margin: .5rem;
+}
