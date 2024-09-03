@@ -2052,9 +2052,9 @@ iframe.instagram-media + script + :not([id]) {
 
 .site-footer {
     position: relative;
-    margin: max(12vmin, 64px) 0 0 0;
-    padding-top: 48px;
-    padding-bottom: 140px;
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     color: #fff;
     background: color-mod(var(--color-darkgrey) l(-5%));
 }
@@ -3050,7 +3050,7 @@ ul.slimer-scroll-flex{
 .uk-modal-body{ padding: 0 20px 20px 20px;}
 html { font-size: 9px !important; }
 
-div.rounded-border{
+.rounded-border{
     border-radius: 1rem;
     border: 1px solid #ccc;
     overflow: hidden;
@@ -3058,4 +3058,8 @@ div.rounded-border{
 .image-link > h4,
 .image-link > p,  {
     margin: .5rem;
+}
+
+.my-small-modal{
+    width: 700px;
 }

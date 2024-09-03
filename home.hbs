@@ -2,511 +2,1101 @@
 
 {{#post}}
     <div class="site-header-content outer{{#match @custom.header_style "Left aligned"}} left-aligned{{/match}}{{#unless @custom.show_publication_cover}}{{#match @custom.header_style "Hidden"}} no-content{{/match}}{{/unless}}">
-        <!-- This is the modal -->
-        <div id="gallery-modal" uk-modal>
-            <div class="uk-modal-dialog uk-width-1 uk-height-1" uk-filter="target: .js-filter">
-                <div class="uk-modal-header">
-                    <h2 class="uk-modal-title"> <button class="uk-modal-close-default" type="button" uk-close></button>Photo Gallery</h2>
-                    <ul class="uk-subnav uk-subnav-pill slimer-scroll-flex">
-                        <li class="uk-active" uk-filter-control><a href="#">All</a></li>
-                        <li uk-filter-control=".tag-exterior"><a href="#">Exterior</a></li>
-                        <li uk-filter-control=".tag-bedrooms"><a href="#">Bedrooms</a></li>
-                        <li uk-filter-control=".tag-bathroom"><a href="#">Bathroom</a></li>
-                        <li uk-filter-control=".tag-kitchen"><a href="#">Kitchen</a></li>
-                        <li uk-filter-control=".tag-living-area"><a href="#">Living Area</a></li>
-                        <li uk-filter-control=".tag-dining"><a href="#">Dining</a></li>
-                        <li uk-filter-control=".tag-common-area"><a href="#">Common Area</a></li>
-                        <li uk-filter-control=".tag-amenities"><a href="#">Amenities</a></li>
-                        <li uk-filter-control=".tag-family"><a href="#">Family</a></li>
-                        <li uk-visible@m uk-filter-control=".tag-winter"><a href="#">Winter</a></li>
-                    </ul>
-                </div>
-                <div class="uk-modal-body">
-                    <div >
-                        <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid uk-lightbox="animation: slide">
-                            <li class="tag-exterior">
-                                <a uk-inline href="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2023/10/257258339_945472482721670_6090587362506355255_n-cropped.jpg">
-                                    <img src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2023/10/257258339_945472482721670_6090587362506355255_n-cropped.jpg" alt="" />
-                                </a>
-                            </li>
-                            <li class="tag-exterior">
-                                <a uk-inline href="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg">
-                                    <img src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
-                                </a>
-                            </li>
-                            <li class="tag-bedrooms">
-                                <div class="uk-card uk-card-default uk-card-body">Item</div>
-                            </li>
-                            <li class="tag-bedrooms">
-                                <div class="uk-card uk-card-default uk-card-body">Item</div>
-                            </li>
-                            <li class="tag-dining">
-                                <div class="uk-card uk-card-secondary uk-card-body">Item</div>
-                            </li>
-                            <li class="tag-dining">
-                                <div class="uk-card uk-card-secondary uk-card-body">Item</div>
-                            </li>
-                            <li class="tag-exterior">
-                                <div class="uk-card uk-card-primary uk-card-body">Item</div>
-                            </li>
-                            <li class="tag-common-area">
-                                <div class="uk-card uk-card-secondary uk-card-body">Item</div>
-                            </li>
-                            <li class="tag-exterior">
-                                <div class="uk-card uk-card-primary uk-card-body">Item</div>
-                            </li>
-                            <li class="tag-bedrooms">
-                                <div class="uk-card uk-card-default uk-card-body">Item</div>
-                            </li>
-                            <li class="tag-exterior">
-                                <div class="uk-card uk-card-primary uk-card-body">Item</div>
-                            </li>
-                            <li class="tag-common-area">
-                                <div class="uk-card uk-card-secondary uk-card-body">Item</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div uk-slider class="uk-hidden@m">
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-                <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
-                    <div class="uk-width-1">
-                        <a href="#gallery-modal" uk-toggle>
-                            <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
-                        </a>
-                    </div>
-                    <div class="uk-width-1">
-                        <a href="#gallery-modal" uk-toggle>
-                            <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
-                        </a>
-                    </div>
-                    <div class="uk-width-1">
-                        <a href="#gallery-modal" uk-toggle>
-                            <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
-                        </a>
-                    </div>
-                    <div class="uk-width-1">
-                        <a href="#gallery-modal" uk-toggle>
-                            <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
-                        </a>
-                    </div>
-                    <div class="uk-width-1">
-                        <a href="#gallery-modal" uk-toggle>
-                            <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
-                        </a>
-                    </div>
-                    <div class="uk-width-1">
-                        <a href="#gallery-modal" uk-toggle>
-                            <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
-                        </a>
-                    </div>
-                </div>
+	<!-- This is the modal -->
+	<div id="gallery-modal" uk-modal>
+	    <div class="uk-modal-dialog uk-width-1 uk-height-1" uk-filter="target: .js-filter">
+		<div class="uk-modal-header">
+		    <h2 class="uk-modal-title"> <button class="uk-modal-close-default" type="button" uk-close></button>Photo Gallery</h2>
+		    <ul class="uk-subnav uk-subnav-pill slimer-scroll-flex">
+			<li class="uk-active" uk-filter-control><a href="#">All</a></li>
+			<li uk-filter-control=".tag-exterior"><a href="#">Exterior</a></li>
+			<li uk-filter-control=".tag-bedrooms"><a href="#">Bedrooms</a></li>
+			<li uk-filter-control=".tag-bathroom"><a href="#">Bathroom</a></li>
+			<li uk-filter-control=".tag-kitchen"><a href="#">Kitchen</a></li>
+			<li uk-filter-control=".tag-living-area"><a href="#">Living Area</a></li>
+			<li uk-filter-control=".tag-dining"><a href="#">Dining</a></li>
+			<li uk-filter-control=".tag-common-area"><a href="#">Common Area</a></li>
+			<li uk-filter-control=".tag-amenities"><a href="#">Amenities</a></li>
+			<li uk-filter-control=".tag-family"><a href="#">Family</a></li>
+			<li uk-visible@m uk-filter-control=".tag-winter"><a href="#">Winter</a></li>
+		    </ul>
+		</div>
+		<div class="uk-modal-body">
+		    <div >
+			<ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid uk-lightbox="animation: slide">
+			    <li class="tag-exterior">
+				<a uk-inline href="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2023/10/257258339_945472482721670_6090587362506355255_n-cropped.jpg">
+				    <img src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2023/10/257258339_945472482721670_6090587362506355255_n-cropped.jpg" alt="" />
+				</a>
+			    </li>
+			    <li class="tag-exterior">
+				<a uk-inline href="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg">
+				    <img src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+				</a>
+			    </li>
+			    <li class="tag-bedrooms">
+				<div class="uk-card uk-card-default uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-bedrooms">
+				<div class="uk-card uk-card-default uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-dining">
+				<div class="uk-card uk-card-secondary uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-dining">
+				<div class="uk-card uk-card-secondary uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-exterior">
+				<div class="uk-card uk-card-primary uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-common-area">
+				<div class="uk-card uk-card-secondary uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-exterior">
+				<div class="uk-card uk-card-primary uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-bedrooms">
+				<div class="uk-card uk-card-default uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-exterior">
+				<div class="uk-card uk-card-primary uk-card-body">Item</div>
+			    </li>
+			    <li class="tag-common-area">
+				<div class="uk-card uk-card-secondary uk-card-body">Item</div>
+			    </li>
+			</ul>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<div uk-slider class="uk-hidden@m">
+	    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+		<div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+		    <div class="uk-width-1">
+			<a href="#gallery-modal" uk-toggle>
+			    <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+			</a>
+		    </div>
+		    <div class="uk-width-1">
+			<a href="#gallery-modal" uk-toggle>
+			    <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+			</a>
+		    </div>
+		    <div class="uk-width-1">
+			<a href="#gallery-modal" uk-toggle>
+			    <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+			</a>
+		    </div>
+		    <div class="uk-width-1">
+			<a href="#gallery-modal" uk-toggle>
+			    <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+			</a>
+		    </div>
+		    <div class="uk-width-1">
+			<a href="#gallery-modal" uk-toggle>
+			    <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+			</a>
+		    </div>
+		    <div class="uk-width-1">
+			<a href="#gallery-modal" uk-toggle>
+			    <img style="padding: 0 .2rem .2rem 0;"src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+			</a>
+		    </div>
+		</div>
 
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+		<a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+		<a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
 
-            </div>
+	    </div>
 
-            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+	    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
 
-        </div>
-        <div class="uk-grid-collapse uk-visible@m" uk-grid uk-lightbox="animation: slide">
-            <div class="uk-width-1@s uk-width-2-3@m uk-width-1-2@l">
-                <a href="#gallery-modal" uk-toggle>
-                    <img style="padding: 0 .2rem .2rem 0;" src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="">
-                </a>
+	</div>
+	<div class="uk-grid-collapse uk-visible@m" uk-grid uk-lightbox="animation: slide">
+	    <div class="uk-width-1@s uk-width-2-3@m uk-width-1-2@l">
+		<a href="#gallery-modal" uk-toggle>
+		    <img style="padding: 0 .2rem .2rem 0;" src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="">
+		</a>
 
-            </div>    
-            <div class="uk-width-1-3@m uk-width-1-2@l uk-visible@m">
-                <div class="uk-grid-collapse uk-child-width-1@m uk-child-width-1-2@l" uk-grid>
-                    <a href="#gallery-modal" uk-toggle>
-                        <img style="padding: 0 .2rem .2rem 0;" src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
-                    </a>
-                    <a href="#gallery-modal" uk-toggle>
-                        <img style="padding: 0 .2rem .2rem 0;" src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
-                    </a>
-                    <a class="uk-visible@l" href="#gallery-modal" uk-toggle>
-                        <img style="padding: 0 .2rem .2rem 0;" src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
-                    </a>
-                    <a class="uk-visible@l" href="#gallery-modal" uk-toggle>
-                        <img style="padding: 0 .2rem .2rem 0;" src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
-                    </a>
+	    </div>    
+	    <div class="uk-width-1-3@m uk-width-1-2@l uk-visible@m">
+		<div class="uk-grid-collapse uk-child-width-1@m uk-child-width-1-2@l" uk-grid>
+		    <a href="#gallery-modal" uk-toggle>
+			<img style="padding: 0 .2rem .2rem 0;" src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+		    </a>
+		    <a href="#gallery-modal" uk-toggle>
+			<img style="padding: 0 .2rem .2rem 0;" src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+		    </a>
+		    <a class="uk-visible@l" href="#gallery-modal" uk-toggle>
+			<img style="padding: 0 .2rem .2rem 0;" src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+		    </a>
+		    <a class="uk-visible@l" href="#gallery-modal" uk-toggle>
+			<img style="padding: 0 .2rem .2rem 0;" src="https://three-oh-four-skihill.hosting.derekadair.com/content/images/2024/08/57d0c3fc-1.jpg" alt="" />
+		    </a>
 
-                </div>
-            </div>
-        </div>
-        {{#match @custom.energy_beam}}
-            <div class="smoke-container">
-                <div class="smoke"></div>
-            </div>
+		</div>
+	    </div>
+	</div>
+	{{#match @custom.energy_beam}}
+	    <div class="smoke-container">
+		<div class="smoke"></div>
+	    </div>
 
-            <svg class='animated'>
-                <filter id="wavy">
-                <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" speed=".002">
-                <animate attributeName="baseFrequency" dur="190s" values="0.02; 0.002; 0.02" repeatCount="indefinite">
-                </feTurbulence>
-                <feDisplacementMap in="SourceGraphic" scale="30"></feTurbulence>
-                </filter>
-            </svg>
-            <svg class='animated'>
-                <filter id="tight">
-                <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" speed=".002">
-                <animate attributeName="baseFrequency" dur="190s" values="0.02; 0.002; 0.02" repeatCount="indefinite">
-                </feTurbulence>
-                <feDisplacementMap in="SourceGraphic" scale="15"></feTurbulence>
-                </filter>
-            </svg>
-        {{/match}}
+	    <svg class='animated'>
+		<filter id="wavy">
+		<feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" speed=".002">
+		<animate attributeName="baseFrequency" dur="190s" values="0.02; 0.002; 0.02" repeatCount="indefinite">
+		</feTurbulence>
+		<feDisplacementMap in="SourceGraphic" scale="30"></feTurbulence>
+		</filter>
+	    </svg>
+	    <svg class='animated'>
+		<filter id="tight">
+		<feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" speed=".002">
+		<animate attributeName="baseFrequency" dur="190s" values="0.02; 0.002; 0.02" repeatCount="indefinite">
+		</feTurbulence>
+		<feDisplacementMap in="SourceGraphic" scale="15"></feTurbulence>
+		</filter>
+	    </svg>
+	{{/match}}
 
     </div>
     {{!-- Everything inside the #post block pulls data from the page --}}
 
     <main id="site-main" class="site-main">
-        <article class="article {{post_class}}">
-            <section class="gh-content gh-canvas">
-                {{#if title}}<h1 class="site-title">{{title}}</h1>{{/if}}
-                <div uk-grid>
-                    <!-- START popular Amenities -->
-                    <div class="uk-width-1-1 uk-width-2-3@m">
-                        <div class="uk-grid">
-                            <div class="width-1-3">
-                                <span><i class="fa-solid fa-door-open"></i>5 bedrooms</span>
-                            </div>
-                            <div class="width-1-3">
-                                <span><i class="fa-solid fa-toilet"></i>3.5 bathrooms</span>
-                            </div>
-                            <div class="width-1-3">
-                                <span><i class="fa-solid fa-users"></i>Sleeps 10</span>
-                            </div>
-                            <div class="width-1-1 uk-grid">
-                                <h2 class="uk-width-1-1">Popular Amenities</h2>
-                                <div class="uk-width-1-2">
-                                    <span><i class="fa-solid fa-hot-tub-person"></i> Hot Tub</span>
-                                </div>
-                                <div class="uk-width-1-2">
-                                    <span><i class="fa-solid fa-washing-machine"></i> Washer</span>
-                                </div>
-                                <div class="uk-width-1-2">
-                                    <span><i class="fa-solid fa-grill-hot"></i> Barbecue Grill</span>
-                                </div>
-                                <div class="uk-width-1-2">
-                                    <span><i class="fa-solid fa-store"></i> Outdoor Space</span>
-                                </div>
-                                <div class="uk-width-1-2">
-                                    <span><i class="fa-solid fa-utensils"></i> Kitchen x2</span>
-                                </div>
-                                <div class="uk-width-1-2">
-                                    <span><i class="fa-solid fa-fireplace"></i> Fireplace</span>
-                                </div>
-                                <a href="#all-amenities" uk-toggle>See all amenities</a>
-                                <div id="all-amenities" uk-modal>
-                                    <div class="uk-modal-dialog uk-width-1 uk-height-1">
-                                        <div class="uk-modal-header">
-                                            <h2 class="uk-modal-title"> <button class="uk-modal-close-default" type="button" uk-close></button>Amenities</h2>
-                                        </div>
-                                        <div class="uk-modal-body uk-grid">
-                                            <h3 class="uk-width-1-1">Top family-friendly amenities</h3>
-                                            <div class="uk-width-1-2">
-                                                <span><i class="fa-solid fa-gamepad"></i> Toys/Games</span>
-                                            </div>
-                                            <div class="uk-width-1-2">
-                                                <span><i class="fa-solid fa-pool-8-ball"></i> Game Room</span>
-                                            </div>
-                                            <div class="uk-width-1-2">
-                                                <span><i class="fa-solid fa-microwave"></i> Microwave</span>
-                                            </div>
-                                            <div class="uk-width-1-2">
-                                                <span><i class="fa-solid fa-fire-burner"></i> Stove x2</span>
-                                            </div>
-                                            <div class="uk-width-1-2">
-                                                <span><i class="fa-solid fa-couch"></i> Living/Dining area</span>
-                                            </div>
-                                            <h3 class="uk-width-1-1">Popular amenities</h3>
-                                            <div class="uk-width-1-2">
-                                                <span><i class="fa-solid fa-hot-tub-person"></i> Hot Tub</span>
-                                            </div>
-                                            <div class="uk-width-1-2">
-                                                <span><i class="fa-solid fa-washing-machine"></i> Washer</span>
-                                            </div>
-                                            <div class="uk-width-1-2">
-                                                <span><i class="fa-solid fa-grill-hot"></i> Barbecue Grill</span>
-                                            </div>
-                                            <div class="uk-width-1-2">
-                                                <span><i class="fa-solid fa-store"></i> Outdoor Space</span>
-                                            </div>
-                                            <div class="uk-width-1-2">
-                                                <span><i class="fa-solid fa-utensils"></i> Kitchen x2</span>
-                                            </div>
-                                            <div class="uk-width-1-2">
-                                                <span><i class="fa-solid fa-fireplace"></i> Fireplace</span>
-                                            </div>
-                                            <div class="uk-width-1-1">
-                                                <h3>Languages Spoken</h3>
-                                                <ul>
-                                                    <li>English</li>
-                                                </ul>
-                                                <h3>Ski</h3>
-                                                <ul>
-                                                    <li>Cross-country skiing nearby</li>
-                                                    <li>Snowboarding nearby</li>
-                                                    <li>Near breck resort</li>
-                                                </ul>
-                                                <h3>Pool/Spa</h3>
-                                                <ul>
-                                                    <li>Spa tub</li>
-                                                </ul>
-                                                <h3>Pool/Spa</h3>
-                                                <ul>
-                                                    <li>Spa tub</li>
-                                                </ul>
-                                                <h3>Internet</h3>
-                                                <ul>
-                                                    <li>Available in the house: WiFi</li>
-                                                </ul>
-                                                <h3>Parking and transportation</h3>
-                                                <ul>
-                                                    <li>Car recommended</li>
-                                                    <li>Onsite parking options include a garage</li>
-                                                </ul>
-                                                <h3>Family friendly</h3>
-                                                <ul>
-                                                    <li>Children's games</li>
-                                                    <li>Children's toys</li>
-                                                </ul>
-                                                <h3>Kitchen</h3>
-                                                <ul>
-
-                                                    <li>Blender</li>
-                                                    <li>Coffee/tea maker</li>
-                                                    <li>Cookware, dishware, and utensils</li>
-                                                    <li>Dishwasher</li>
-                                                    <li>Ice maker</li>
-                                                    <li>Kitchen island</li>
-                                                    <li>Microwave</li>
-                                                    <li>Oven</li>
-                                                    <li>Paper towels</li>
-                                                    <li>Refrigerator</li>
-                                                    <li>Stovetop</li>
-                                                    <li>Toaster</li>
-                                                </ul>
-                                                <h3>Dining</h3>
-                                                <ul>
-                                                    <li>Dining table</li>
-                                                </ul>
-                                                <h3>Bedrooms</h3>
-                                                <ul>
-                                                    <li>5 bedrooms</li>
-                                                    <li>Bedsheets provided</li>
-                                                </ul>
-                                                <h3>
-                                                    Bathroom</h3>
-                                                <ul>
-                                                    <li>3.5 bathrooms</li>
-                                                    <li>Bathtub</li>
-                                                    <li>Bathtub or shower</li>
-                                                    <li>Hair dryer</li>
-                                                    <li>Shower</li>
-                                                    <li>Soap</li>
-                                                    <li>Toilet paper</li>
-                                                    <li>Towels provided</li>
-                                                </ul>
-                                                <h3>
-                                                    <li>Living spaces</h3>
-                                                <ul>
-                                                    <li>Dining table</li>
-                                                    <li>Fireplace</li>
-                                                    <li>Living room</li>
-                                                </ul>
-                                                <h3>
-                                                    Entertainment</h3>
-                                                <ul>
-
-                                                    <li>Books</li>
-                                                    <li>DVD player</li>
-                                                    <li>Games</li>
-                                                    <li>Smart TV with cable/satellite channels</li>
-                                                    <li>Stereo</li>
-                                                    <li>Video library</li>
-                                                </ul>
-                                                <h3>
-                                                    Outdoor areas</h3>
-                                                <ul>
-                                                    <li>Balcony</li>
-                                                    <li>Barbecue grill</li>
-                                                </ul>
-                                                <h3>
-                                                    Laundry</h3>
-                                                <ul>
-                                                    <li>Washing machine</li>
-                                                </ul>
-                                                <h3>Work spaces</h3>
-                                                <ul>
-                                                    <li>Computer monitor</li>
-                                                    <li>Desk</li>
-                                                    <li>Desk chair</li>
-                                                </ul>
-                                                <h3>
-                                                    Comfort</h3>
-                                                <ul>
-
-                                                    <li>Heating</li>
-                                                </ul>
-                                                <h3>
-                                                    Pets</h3>
-                                                <ul>
-                                                    <li>No pets allowed</li>
-
-                                                </ul>
-                                                <h3>Suitability/Accessibility</h3>
-                                                <ul>
-                                                    <li>3 steps to reach entrance</li>
-                                                    <li>No elevator</li>
-                                                    <li>Smoke-free property</li>
-
-                                                </ul>
-                                                <h3>Services and conveniences</h3>
-                                                <ul>
-                                                    <li>Housekeeping (on request)</li>
-
-                                                </ul>
-                                                <h3>Location highlights</h3>
-                                                <ul>
-                                                    <li>In the mountains</li>
-
-                                                </ul>
-                                                <h3>Things to do</h3>
-                                                <ul>
-                                                    <li>Arcade/game room</li>
-                                                    <li>Billiards/pool table</li>
-                                                    <li>Cycling nearby</li>
-                                                    <li>Fishing nearby</li>
-                                                    <li>Golfing nearby</li>
-                                                    <li>Hiking/biking trails nearby</li>
-                                                    <li>Hunting nearby</li>
-                                                    <li>Mountain biking nearby</li>
-                                                    <li>Mountain climbing nearby</li>
-                                                    <li>Rafting nearby</li>
-                                                    <li>Rock climbing nearby</li>
-                                                    <li>Sailing nearby</li>
-                                                    <li>Sledding nearby</li>
-                                                    <li>Snowmobiling nearby</li>
-                                                    <li>Water skiing nearby</li>
-                                                    <li>Wildlife walks nearby</li>
-                                                    <li>Windsurfing nearby</li>
-                                                </ul>
-                                                <h3>General</h3>
-                                                <ul>
-                                                    <li> Housekeeping (on request)</li>
-                                                </ul>
-
-                                                <h3>Safety features</h3>
-                                                <ul>
-                                                    <li>Carbon monoxide detector (host has indicated there is a carbon monoxide detector on the property)</li>
-                                                    <li>Smoke detector (host has indicated there is a smoke detector on the property)</li>
-                                                    <li>First aid kit</li>
-                                                    <li>Fire extinguisher</li>
-                                                    <li>Deadbolt lock</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- END Popular Amenities !-->
-                    <div class="uk-visible@m uk-width-1-3@m uk-card" uk-sticky><!-- START datepicker -->
-                        <div class="rounded-border uk-card-body">
-
-                            <label for="dates">Dates</label>
-                            <input id="date-picker" id="dates"></input>
-                            <label for="travelers">Travelers</label>
-                            <input type="number" min="1" max="10" value="10" />
-                        </div>
-                    </div><!-- END datepicker -->
-                    <div class="uk-width-1-1 uk-hidden@m uk-card" uk-sticky><!-- START datepicker -->
-                        <div class="rounded-border uk-card-body">
-
-                            <label for="dates">Dates</label>
-                            <input id="date-picker" id="dates"></input>
-                            <label for="travelers">Travelers</label>
-                            <input type="number" min="1" max="10" value="10" />
-                        </div>
-                    </div><!-- END datepicker -->
-                    <div class="uk-width-1-1 uk-width-2-3@m" > <!-- START explore -->
-                        <div uk-grid>
-                        <h2 class="uk-width-1-1"> Explore the area</h2>
-                        <div class="uk-width-1-2">
-			    <div class="uk-card rounded-border image-link">
-<img alt="Map" class="uk-image" src="https://maps.googleapis.com/maps/api/staticmap?&amp;size=475x250&amp;zoom=13&amp;markers=icon:https%3A%2F%2Fa.travel-assets.com%2Ftravel-assets-manager%2Feg-maps%2Fproperty-vrbo.png%7C39.48207%2C-106.06179&amp;channel=expedia-HotelInformation&amp;maptype=roadmap&amp;scale=1&amp;key=AIzaSyDess_T-0JJc7_tjoArRSmaYOqtwmPQbMQ&amp;">
-				<h4>Breckenridge, co</h4>
-				<p><a href="#map-modal" uk-toggle>View map</a></p>
+	<article class="article {{post_class}}">
+	    <section class="gh-content gh-canvas">
+		{{#if title}}<h1>{{title}}</h1>{{/if}}
+		<div uk-grid>
+		    <!-- START popular Amenities -->
+		    <div class="uk-width-1-1 uk-width-2-3@m">
+			<div class="uk-grid">
+			    <div class="width-1-3">
+				<span><i class="fa-solid fa-door-open"></i>5 bedrooms</span>
 			    </div>
-                        </div>
-			<div id="map-modal" uk-modal>
-			    <div id="map" style="width: 100%; height: 300px;"></div>
-			</div>
-                        <ul class="uk-width-1-2 uk-list">
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <span>Breckinridge Ski Resort</span> 
-                                <span>14 min walk</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <span>Breckinridge Ski Resort</span> 
-                                <span>14 min walk</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                <span>Breckinridge Ski Resort</span> 
-                                <span>14 min walk</span>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-plane"></i>
-                                <span>Breckinridge Ski Resort</span> 
-                                <span>14 min walk</span>
-                            </li>
-                        </ul>
-                    </div><!-- END explore -->
-                    <div class="uk-width-1-1"> <!-- START content -->
-                        {{content}}
-                    </div><!-- END content -->
-                </div>
-                <!--{{content}}-->
-            </section>
+			    <div class="width-1-3">
+				<span><i class="fa-solid fa-toilet"></i>3.5 bathrooms</span>
+			    </div>
+			    <div class="width-1-3">
+				<span><i class="fa-solid fa-users"></i>Sleeps 10</span>
+			    </div>
+			    <div class="width-1-1 uk-grid">
+				<h2 class="uk-width-1-1">Popular Amenities</h2>
+				<div class="uk-width-1-2">
+				    <span><i class="fa-solid fa-hot-tub-person"></i> Hot Tub</span>
+				</div>
+				<div class="uk-width-1-2">
+				    <span><i class="fa-solid fa-washing-machine"></i> Washer</span>
+				</div>
+				<div class="uk-width-1-2">
+				    <span><i class="fa-solid fa-grill-hot"></i> Barbecue Grill</span>
+				</div>
+				<div class="uk-width-1-2">
+				    <span><i class="fa-solid fa-store"></i> Outdoor Space</span>
+				</div>
+				<div class="uk-width-1-2">
+				    <span><i class="fa-solid fa-utensils"></i> Kitchen x2</span>
+				</div>
+				<div class="uk-width-1-2">
+				    <span><i class="fa-solid fa-fireplace"></i> Fireplace</span>
+				</div>
+				<a href="#all-amenities" uk-toggle>See all amenities</a>
+				<div id="all-amenities" uk-modal>
+				    <div class="uk-modal-dialog uk-width-1 uk-height-1">
+					<div class="uk-modal-header">
+					    <h2 class="uk-modal-title"> <button class="uk-modal-close-default" type="button" uk-close></button>Amenities</h2>
+					</div>
+					<div class="uk-modal-body uk-grid">
+					    <h3 class="uk-width-1-1">Top family-friendly amenities</h3>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-gamepad"></i> Toys/Games</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-pool-8-ball"></i> Game Room</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-microwave"></i> Microwave</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-fire-burner"></i> Stove x2</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-couch"></i> Living/Dining area</span>
+					    </div>
+					    <h3 class="uk-width-1-1">Popular amenities</h3>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-hot-tub-person"></i> Hot Tub</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-washing-machine"></i> Washer</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-grill-hot"></i> Barbecue Grill</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-store"></i> Outdoor Space</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-utensils"></i> Kitchen x2</span>
+					    </div>
+					    <div class="uk-width-1-2">
+						<span><i class="fa-solid fa-fireplace"></i> Fireplace</span>
+					    </div>
+					    <div class="uk-width-1-1">
+						<h3>Languages Spoken</h3>
+						<ul>
+						    <li>English</li>
+						</ul>
+						<h3>Ski</h3>
+						<ul>
+						    <li>Cross-country skiing nearby</li>
+						    <li>Snowboarding nearby</li>
+						    <li>Near breck resort</li>
+						</ul>
+						<h3>Pool/Spa</h3>
+						<ul>
+						    <li>Spa tub</li>
+						</ul>
+						<h3>Pool/Spa</h3>
+						<ul>
+						    <li>Spa tub</li>
+						</ul>
+						<h3>Internet</h3>
+						<ul>
+						    <li>Available in the house: WiFi</li>
+						</ul>
+						<h3>Parking and transportation</h3>
+						<ul>
+						    <li>Car recommended</li>
+						    <li>Onsite parking options include a garage</li>
+						</ul>
+						<h3>Family friendly</h3>
+						<ul>
+						    <li>Children's games</li>
+						    <li>Children's toys</li>
+						</ul>
+						<h3>Kitchen</h3>
+						<ul>
 
-        </article>
+						    <li>Blender</li>
+						    <li>Coffee/tea maker</li>
+						    <li>Cookware, dishware, and utensils</li>
+						    <li>Dishwasher</li>
+						    <li>Ice maker</li>
+						    <li>Kitchen island</li>
+						    <li>Microwave</li>
+						    <li>Oven</li>
+						    <li>Paper towels</li>
+						    <li>Refrigerator</li>
+						    <li>Stovetop</li>
+						    <li>Toaster</li>
+						</ul>
+						<h3>Dining</h3>
+						<ul>
+						    <li>Dining table</li>
+						</ul>
+						<h3>Bedrooms</h3>
+						<ul>
+						    <li>5 bedrooms</li>
+						    <li>Bedsheets provided</li>
+						</ul>
+						<h3>
+						    Bathroom</h3>
+						<ul>
+						    <li>3.5 bathrooms</li>
+						    <li>Bathtub</li>
+						    <li>Bathtub or shower</li>
+						    <li>Hair dryer</li>
+						    <li>Shower</li>
+						    <li>Soap</li>
+						    <li>Toilet paper</li>
+						    <li>Towels provided</li>
+						</ul>
+						<h3>
+						    <li>Living spaces</h3>
+						<ul>
+						    <li>Dining table</li>
+						    <li>Fireplace</li>
+						    <li>Living room</li>
+						</ul>
+						<h3>
+						    Entertainment</h3>
+						<ul>
+
+						    <li>Books</li>
+						    <li>DVD player</li>
+						    <li>Games</li>
+						    <li>Smart TV with cable/satellite channels</li>
+						    <li>Stereo</li>
+						    <li>Video library</li>
+						</ul>
+						<h3>
+						    Outdoor areas</h3>
+						<ul>
+						    <li>Balcony</li>
+						    <li>Barbecue grill</li>
+						</ul>
+						<h3>
+						    Laundry</h3>
+						<ul>
+						    <li>Washing machine</li>
+						</ul>
+						<h3>Work spaces</h3>
+						<ul>
+						    <li>Computer monitor</li>
+						    <li>Desk</li>
+						    <li>Desk chair</li>
+						</ul>
+						<h3>
+						    Comfort</h3>
+						<ul>
+
+						    <li>Heating</li>
+						</ul>
+						<h3>
+						    Pets</h3>
+						<ul>
+						    <li class="uk-text-bold">No pets allowed</li>
+
+						</ul>
+						<h3>Suitability/Accessibility</h3>
+						<ul>
+						    <li>3 steps to reach entrance</li>
+						    <li>No elevator</li>
+						    <li>Smoke-free property</li>
+
+						</ul>
+						<h3>Services and conveniences</h3>
+						<ul>
+						    <li>Housekeeping (on request)</li>
+
+						</ul>
+						<h3>Location highlights</h3>
+						<ul>
+						    <li>In the mountains</li>
+
+						</ul>
+						<h3>Things to do</h3>
+						<ul>
+						    <li>Arcade/game room</li>
+						    <li>Billiards/pool table</li>
+						    <li>Cycling nearby</li>
+						    <li>Fishing nearby</li>
+						    <li>Golfing nearby</li>
+						    <li>Hiking/biking trails nearby</li>
+						    <li>Hunting nearby</li>
+						    <li>Mountain biking nearby</li>
+						    <li>Mountain climbing nearby</li>
+						    <li>Rafting nearby</li>
+						    <li>Rock climbing nearby</li>
+						    <li>Sailing nearby</li>
+						    <li>Sledding nearby</li>
+						    <li>Snowmobiling nearby</li>
+						    <li>Water skiing nearby</li>
+						    <li>Wildlife walks nearby</li>
+						    <li>Windsurfing nearby</li>
+						</ul>
+						<h3>General</h3>
+						<ul>
+						    <li> Housekeeping (on request)</li>
+						</ul>
+
+						<h3>Safety features</h3>
+						<ul>
+						    <li>Carbon monoxide detector (host has indicated there is a carbon monoxide detector on the property)</li>
+						    <li>Smoke detector (host has indicated there is a smoke detector on the property)</li>
+						    <li>First aid kit</li>
+						    <li>Fire extinguisher</li>
+						    <li>Deadbolt lock</li>
+						</ul>
+					    </div>
+					</div>
+				    </div>
+				</div>
+			    </div>
+			</div>
+		    </div> <!-- END Popular Amenities !-->
+		    <div class="uk-visible@m uk-width-1-3@m uk-card" uk-sticky><!-- START datepicker -->
+			<div class="rounded-border uk-card-body">
+
+			    <label for="dates">Dates</label>
+			    <input id="date-picker" id="dates"></input>
+			    <label for="travelers">Travelers</label>
+			    <input type="number" min="1" max="10" value="10" />
+			</div>
+		    </div><!-- END datepicker -->
+		    <div class="uk-width-1-1 uk-hidden@m uk-card" uk-sticky><!-- START datepicker -->
+			<div class="rounded-border uk-card-body">
+
+			    <label for="dates">Dates</label>
+			    <input id="date-picker" id="dates"></input>
+			    <label for="travelers">Travelers</label>
+			    <input type="number" min="1" max="10" value="10" />
+			</div>
+		    </div><!-- END datepicker -->
+		    <div class="uk-width-1-1 uk-width-2-3@m" > 
+			<div uk-grid>
+			    <h2 class="uk-width-1-1"> Explore the area</h2><!-- START explore -->
+			    <div class="uk-width-1-2">
+				<div class="uk-card rounded-border image-link">
+				    <img alt="Map" class="uk-image" src="https://maps.googleapis.com/maps/api/staticmap?&amp;size=475x250&amp;zoom=13&amp;markers=icon:https%3A%2F%2Fa.travel-assets.com%2Ftravel-assets-manager%2Feg-maps%2Fproperty-vrbo.png%7C39.48207%2C-106.06179&amp;channel=expedia-HotelInformation&amp;maptype=roadmap&amp;scale=1&amp;key=AIzaSyDess_T-0JJc7_tjoArRSmaYOqtwmPQbMQ&amp;">
+				    <h4>Breckenridge, co</h4>
+				    <p><a href="#map-modal" uk-toggle>View map</a></p>
+				</div>
+			    </div>
+			    <div id="map-modal" uk-modal>
+				<div class="uk-modal-dialog" style="width: 70%">
+				    <div class="uk-modal-header">
+					<h2 class="uk-modal-title"> <button class="uk-modal-close-default" type="button" uk-close></button>Explore The Area</h2>
+				    </div>
+				    <div class="uk-modal-body">
+					<div id="map" style="width: 100%; height: 500px;"></div>
+				    </div>
+				</div>
+			    </div>
+			    <ul class="uk-width-1-2 uk-list">
+				<li>
+				    <i class="fa-solid fa-location-dot"></i>
+				    <span>Breckinridge Ski Resort</span> 
+				    <span>14 min walk</span>
+				</li>
+				<li>
+				    <i class="fa-solid fa-location-dot"></i>
+				    <span>Main Street</span> 
+				    <span>3 min drive</span>
+				</li>
+				<li>
+				    <i class="fa-solid fa-location-dot"></i>
+				    <span>BreckConnect Gondola</span> 
+				    <span>3 min drive</span>
+				</li>
+				<li>
+				    <i class="fa-solid fa-plane"></i>
+				    <span>Denver Airport</span> 
+				    <span>111 min drive</span>
+				</li>
+				<li>
+				    <a href="#more-places-modal" uk-toggle>See More ></a>
+				    <div id="more-places-modal" uk-modal>
+					<div class="uk-modal-dialog uk-height-1 my-small-modal">
+					    <div class="uk-modal-header">
+						<h2 class="uk-modal-title"> <button class="uk-modal-close-default" type="button" uk-close></button>Explore the area</h2>
+					    </div>
+					    <div class="uk-modal-body">
+						<div uk-grid>
+						    <div class="uk-width-1-3">
+							<div class="rounded-border">
+							    <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/147000/147419-Summit-County-Ski-Areas.jpg?impolicy=resizecrop&rw=598&ra=fit" />
+							</div>
+							<p class="uk-text-bold">Breckenridge Ski Resort</p>
+							<p>14 min walk</p>
+						    </div>
+						    <div class="uk-width-1-3">
+							<div class="rounded-border">
+							    <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/60000/60975-Breckenridge-Ski-Resort.jpg?impolicy=resizecrop&rw=598&ra=fit" />
+							</div>
+							<p class="uk-text-bold">Main Street</p>
+							<p>3 min drive</p>
+						    </div>
+						    <div class="uk-width-1-3">
+							<div class="rounded-border">
+							    <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/60000/60975-Breckenridge-Ski-Resort.jpg?impolicy=resizecrop&rw=598&ra=fit" />
+							</div>
+							<p class="uk-text-bold">Blue River Plaza</p>
+							<p>3 min drive</p>
+						    </div>
+						</div>
+						<h3>About the neighborhood</h3>
+						<p>Located in Peak 8, a neighborhood in Breckenridge, this vacation home is in the mountains. Breckenridge Ski Resort and Keystone Ski Resort are worth checking out if an activity is on the agenda, while those in the mood for shopping can visit Main Street. Looking to enjoy an event or a game while in town? See what's happening at Breckenridge Recreation Center or Silverthorne Recreation Center. Take in the nearby slopes with cross-country skiing and snowboarding, or check out other outdoor activities such as sledding and snowmobiling. </p>
+						<br />
+						<div uk-grid>
+						    <!-- Whats nearby -->
+						    <div class="uk-width-1-1">
+							<div uk-grid>
+							    <div class="uk-grid-item uk-width-auto">
+								<i class="fa-solid fa-location-dot"></i>
+							    </div>
+							    <div class="uk-grid-item uk-expand">
+								<ul class="uk-list">
+								    <li>
+									<span class="uk-text-bold">What's nearby?</span>
+								    </li>
+								    <li>
+									Breckenridge Ski Resort - 14 min walk
+								    </li>
+								    <li>
+									Main STreet - 3 min drive
+								    </li>
+								    <li>
+									Gondola - 3 min drive
+								    </li>
+								    <li>
+									Riverwalk Center - 4 min drive
+								    </li>
+								    <li>
+									Beaver Run SuperChair - 6 min drive
+								    </li>
+								</ul>
+							    </div>
+							</div>
+						    </div>
+						    <!-- Getting Around -->
+						    <div class="uk-width-1-1">
+							<div uk-grid>
+							    <div class="uk-grid-item uk-width-auto">
+								<i class="fa-solid fa-car"></i>
+							    </div>
+							    <div class="uk-grid-item uk-expand">
+								<ul class="uk-list">
+								    <li>
+									<span class="uk-text-bold">Getting Around</span>
+								    </li>
+								    <li>
+									Vail/Eagle Airport (EGE) - 82 min drive
+								    </li>
+								    <li>
+									Denver Airport (DEN) - 111 min drive
+								    </li>
+								</ul>
+							    </div>
+							</div>
+						    </div>
+						    <!-- Restaurants -->
+						    <div class="uk-width-1-1">
+							<div uk-grid>
+							    <div class="uk-grid-item uk-width-auto">
+								<i class="fa-thin fa-utensils"></i>
+							    </div>
+							    <div class="uk-grid-item uk-expand">
+								<ul class="uk-list">
+								    <li>
+									<span class="uk-text-bold">Restaurants</span>
+								    </li>
+								    <li>
+									Sevens - 17 min walk
+								    </li>
+								    <li>
+									Robbies Tavern - 11 min walk
+								    </li>
+								    <li>
+									Coppertop Bar & Cafe - 5 min drive
+								    </li>
+								    <li>
+									Downstairs at Eric's - 3 min drive
+								    </li>
+								</ul>
+							    </div>
+							</div>
+						    </div>
+						    <!-- END restaurants -->
+						</div>
+					    </div>
+					</div>
+				    </div>
+				</li>
+			    </ul>
+			</div><!-- END explore -->
+			<div class="uk-width-1-1"> <!-- START rooms and beds -->
+			    <h2>Rooms & Beds</h2>
+			    <h3>5 bedrooms (sleeps 10</h3>
+			    <div uk-grid>
+				<div class="uk-grid-item uk-width-1-3">
+				    <h4>Bedroom 1</h4>
+				    <i class="fa-solid fa-bed-front"></i>
+				    <p>1 king  bed</p>
+				</div>
+				<div class="uk-grid-item uk-width-1-3">
+				    <h4>Bedroom 2</h4>
+				    <i class="fa-solid fa-bed-front"></i>
+				    <p>1 king  bed</p>
+				</div>
+				<div class="uk-grid-item uk-width-1-3">
+				    <h4>Bedroom 3</h4>
+				    <i class="fa-solid fa-bed-front"></i>
+				    <i class="fa-solid fa-bed-front"></i>
+				    <p>2 murphy  beds</p>
+				</div>
+				<div class="uk-grid-item uk-width-1-3">
+				    <h4>Bedroom 4</h4>
+				    <i class="fa-solid fa-bed-front"></i>
+				    <p>1 king  bed</p>
+				</div>
+				<div class="uk-grid-item uk-width-1-3">
+				    <h4>Bedroom 5</h4>
+				    <i class="fa-solid fa-bed-front"></i>
+				    <p>1 king  bed</p>
+				</div>
+				<div class="uk-grid-item uk-width-1-3">
+				    <h4>Convertable beds</h4>
+				    <i class="fa-thin fa-bed-front"></i>
+				    <i class="fa-solid fa-bed"></i>
+				    <p>1 double bed, 1 double fouton</p>
+				</div>
+			    </div>
+			    <hr />
+			    <h3>3 bathrooms, 1 half bathroom</h3>
+			    <div uk-grid>
+				<div class="uk-grid-item uk-width-1-3">
+				    <h4>Bathroom 2</h4>
+				    <i class="fa-thin fa-toilet"></i>
+				    <p>Toilet</p>
+				</div>
+				<div class="uk-grid-item uk-width-1-3">
+				    <h4>Bathroom 1</h4>
+				    <i class="fa-thin fa-toilet"></i>
+				    <i class="fa-thin fa-bath"></i>
+				    <i class="fa-thin fa-shower"></i>
+				    <p>Bathtub, Toilet, shower only</p>
+				</div>
+				<div class="uk-grid-item uk-width-1-3">
+				    <h4>Bathroom 3</h4>
+				    <i class="fa-thin fa-toilet"></i>
+				    <i class="fa-thin fa-shower"></i>
+				    <p>Toilet, shower only</p>
+				</div>
+				<div class="uk-grid-item uk-width-1-3">
+				    <h4>Bathroom 4</h4>
+				    <i class="fa-thin fa-bath"></i>
+				    <i class="fa-thin fa-toilet"></i>
+				    <p>Bathtub or shower, Toilet</p>
+				</div>
+				<div class="uk-grid-item uk-width-1-3">
+				    <h4>Bathroom 5</h4>
+				    <i class="fa-thin fa-toilet"></i>
+				    <i class="fa-thin fa-shower"></i>
+				    <p>Toilet, shower only</p>
+				</div>
+			    </div>
+			    <hr />
+
+			    <h3>Spaces</h3>
+			    <div uk-grid>
+				<div class="uk-grid-item uk-width-1-3">
+				    <span><i class="fa-sharp fa-light fa-bench-tree"></i> Patio</span>
+				</div>
+				<div class="uk-grid-item uk-width-1-3">
+				    <span><i class="fa-thin fa-utensils"></i> 2x Kitchens</span>
+				</div>
+				<div class="uk-grid-item uk-width-1-3">
+				    <span><i class="fa-regular fa-mountain"></i> Mountain Views</span>
+				</div>
+			    </div>
+			    <hr />
+			</div><!-- END Bends and rooms -->
+			<div class="uk-width-1-1"> <!-- START content -->
+			    {{content}}
+			</div><!-- END content -->
+			<div class="uk-width-1-1"><!-- START amenities -->
+			    <h3>Amenities</h3>
+			    <div uk-grid>
+				<p class="uk-grid-item uk-width-1-3">
+				<i class="fa-light fa-hot-tub-person"></i>
+				Hot Tub
+				</p>
+				<p class="uk-grid-item uk-width-1-3">
+				<i class="fa-thin fa-utensils"></i>
+				2x Kitchens
+				</p>
+				<p class="uk-grid-item uk-width-1-3">
+				<i class="fa-light fa-washer"></i>
+				Washer
+				</p>
+				<p class="uk-grid-item uk-width-1-3">
+				<i class="fa-light fa-dryer"></i>
+				Dryer
+				</p>
+				<p class="uk-grid-item uk-width-1-3">
+				<i class="fa-light fa-table-picnic"></i>
+				Outdoor Space
+				</p>
+				<p class="uk-grid-item uk-width-1-3">
+				<i class="fa-light fa-car"></i>
+				Parking
+				</p>
+				<p class="uk-grid-item uk-width-1-3">
+				<i class="fa-solid fa-tower-broadcast"></i>
+				Wi Fi
+				</p>
+				<p class="uk-grid-item uk-width-1-3">
+				<i class="fa-solid fa-grill-hot"></i>
+				Grill
+				</p>
+				<p class="uk-grid-item uk-width-1-3">
+				<i class="fa-solid fa-pool-8-ball"></i>
+				Pool Table 
+				</p>
+			    </div>
+			    <a href="#all-amenities-modal" uk-toggle>See all Amenities</a>
+			    <div id="all-amenities-modal" uk-modal>
+				<div class="uk-modal-dialog my-small-modal">
+				    <div class="uk-modal-header">
+					<h2 class="uk-modal-title"> <button class="uk-modal-close-default" type="button" uk-close></button>Amenities</h2>
+				    </div>
+				    <div class="uk-modal-body">
+					<div uk-grid>
+					    <div class="uk-width-1-1" style="padding-left:0; margin-left:60px;">
+						<br />
+						<div class="uk-alert-warning uk-padding" uk-grid> 
+						    <span class="uk-text-bold uk-width-auto">NOTE: </span>
+						    <span class="uk-width-expand">Four wheel drive or all wheel drive is highly recommended during any date that snow may occur</span>
+						</div>
+					    </div>
+					    <h3 class="uk-width-1-1">Essentials</h3> <!-- essentials -->
+					    <ul class="uk-list uk-width-1-2">
+						<li>
+						    Wi-Fi
+						</li>
+						<li>
+						    Bath Towels provided
+						</li>
+						<li>
+						    Linens provided
+						</li>
+						<li>
+						    Hair Dryer
+						</li>
+						<li>
+						    Toiler Paper
+						</li>
+					    </ul>
+					    <ul class="uk-list uk-width-1-2">
+						<li>
+						    Paper Towels
+						</li>
+						<li>
+						    Basic soaps
+						</li>
+						<li>
+						    Heated floors
+						</li>
+						<li>
+						    Fireplace x2
+						</li>
+						<li>
+						    Desk
+						</li>
+					    </ul>
+					    <h3 class="uk-width-1-1">Kitchens</h3> <!-- kitchens -->
+					    <p>Two beautiful citchens with basic cooking and baking supplies</p>
+					    <ul class="uk-list uk-width-1-2">
+						<li>
+						    2x Refrigerators
+						</li>
+						<li>
+						    2x Dishwashers
+						</li>
+						<li>
+						    2x Microwaves
+						</li>
+						<li>
+						    2x Stoves/Ovens
+						</li>
+						<li>
+						    Grill
+						</li>
+						<li>
+						    Kitchen Island
+						</li>
+					    </ul>
+					    <ul class="uk-list uk-width-1-2">
+						<li>
+						    Plates, Bowls, Glasses, Utensils
+						</li>
+						<li>
+						    Large dining table
+						</li>
+						<li>
+						    Coffee Maker
+						</li>
+						<li>
+						    Ice Maker
+						</li>
+						<li>
+						    Toaster
+						</li>
+					    </ul>
+					    <h3 class="uk-width-1-1">Spa</h3><!-- Pool & spa -->
+					    <ul class="uk-list uk-width-1-2">
+						<li>
+						    Spa bathtub
+						</li>
+						<li>
+						    Private Hot Tub
+						</li>
+					    </ul>
+					    <h3 class="uk-width-1-1">Entertainment</h3><!-- Entertainment-->
+					    <ul class="uk-list uk-width-1-2">
+						<li>Games</li>
+						<li>Books</li>
+						<li>2x Television</li>
+						<li>Smart TV</li>
+						<li>Satellite / cable</li>
+					    </ul>
+					    <ul class="uk-list uk-width-1-2">
+						<li>DVD player</li>
+						<li>Video library</li>
+						<li>Stereo</li>
+						<li>Game room</li>
+						<li>Pool table</li>
+					    </ul>
+					    <h3 class="uk-width-1-1">Baby/Toddler</h3><!-- Baby/Toddler-->
+					    <ul class="uk-list uk-width-1-2">
+						<li>Games for kids</li>
+					    </ul>
+					    <ul class="uk-list uk-width-1-2">
+						<li>Toys</li>
+					    </ul>
+					    <h3 class="uk-width-1-1">Parking</h3><!-- Parking-->
+					    <ul class="uk-list uk-width-1-2">
+						<li>Additional Parking in driveway</li>
+					    </ul>
+					    <ul class="uk-list uk-width-1-2">
+						<li>2 car heated garage</li>
+					    </ul>
+					    <h3 class="uk-width-1-1">Safety</h3><!-- safety-->
+					    <ul class="uk-list uk-width-1-2">
+						<li>Carbon monoxide detector</li>
+						<li>Smoke detector </li>
+						<li>Deadbolt lock</li>
+						<li>Fire extinguisher (laundry room)</li>
+					    </ul>
+					    <ul class="uk-list uk-width-1-2">
+						<li>First aid kit (master bath)</li>
+						<li>Exterior lighting</li>
+						<li>There are at least 3 exists from the house</li>
+					    </ul>
+					    <h3 class="uk-width-1-1">Nearby Activities</h3><!-- nearby activities-->
+					    <ul class="uk-list uk-width-1-2">
+						<li>Sailing</li>
+						<li>Water skiing</li>
+						<li>Windsurfing</li>
+						<li>Skiing</li>
+						<li>Snowboarding</li>
+						<li>Cross-country skiing</li>
+						<li>Sledding</li>
+						<li>Snowmobiling</li>
+						<li>Hiking</li>
+						<li>Cycling</li>
+					    </ul>
+					    <ul class="uk-list uk-width-1-2">
+						<li>Mountain biking</li>
+						<li>Rock climbing</li>
+						<li>Rafting</li>
+						<li>Mountain climbing</li>
+						<li>Shopping</li>
+						<li>Golf</li>
+						<li>Wildlife viewing</li>
+						<li>Fishing</li>
+						<li>Hunting</li>
+						<li>Additional Parking in driveway</li>
+					    </ul>
+					</div>
+				    </div>
+				</div>
+			    </div>
+			</div><!-- END Amenities -->
+			<div class="uk-width-1-1 uk-margin-medium-top" uk-grid> <!-- START house rules -->
+			    <div class="uk-width-1-1 uk-width-1-3@m uk-alert-primary">
+				<h3 class="uk-margin-medium-top">Rental Details</h4>
+				<ul class="uk-list">
+				    <li>Check In: 4:00PM</li>
+				    <li>Check Out: 10:00AM</li>
+				    <li>Minimum age to rent: 26</li>
+				</ul>
+			    </div>
+			    <div class="uk-width-1-1 uk-width-2-3@m" uk-grid>
+				<h3 class="uk-margin-medium-top uk-width-1-1">House Rules</h3>
+				<p class="uk-width-1-1">This is a great family home and we encourage families and children. Responsible and respectful adult groups over 26 years old are also welcome. </p>
+				<div class="uk-width-1-1 uk-width-1-2@m">
+				    <h4><i class="fa-regular fa-baby-carriage"></i> Children</h4>
+				    <p>Children allowed: 0-18</p>
+				    <p>Families with chilrden welcome</p>
+				</div>
+				<div class="uk-width-1-1 uk-width-1-2@m">
+				    <h4><i class="fa-kit fa-light-paw-circle-xmark"></i> Pets</h4>
+				    <p>No Pets Allowed</p>
+				</div>
+				<div class="uk-width-1-1 uk-width-1-2@m">
+				    <h4><i class="fa-kit fa-thin-party-horn-circle-xmark"></i> Events</h4>
+				    <p>No Parties Or Events</p>
+				</div>
+				<div class="uk-width-1-1 uk-width-1-2@m">
+				    <h4><i class="fa-light fa-ban-smoking"></i> Smoking</h4>
+				    <p>Smoking not permitted</p>
+				</div>
+
+			    </div><!-- END house rules -->
+			    <div class="uk-width-1-1" uk-grid> <!-- START Damages-->
+				<h3 class="uk-width-1-1 uk-width-1-3@m">Damages and incidentals</h3>
+				<p class="uk-width-1-1 uk-width-2-3@m">If you incur incidental fees or cause damage to the rental property, your credit card may be charged up to $1,000.</p>
+			    </div><!-- END Damages -->
+			    <div class="uk-width-1-1" uk-grid> <!-- START Important Info-->
+				<h3 class="uk-width-1-1 uk-width-1-3@m">Important information</h3>
+				<div class="uk-width-1-1 uk-width-2-3@m">
+				    <p class="uk-text-bold">You need to know...</p>
+				    <p>Extra-person charges may apply and vary depending on property policy</p>
+				    <p>Government-issued photo identification and a credit card, debit card, or cash deposit may be required at check-in for incidental charges</p>
+				    <p>Special requests are subject to availability upon check-in and may incur additional charges; special requests cannot be guaranteed</p>
+				    <p>Onsite parties or group events are strictly prohibited</p>
+				    <p>Note from host: No parties or events allowed</p>
+				    <p>Host has indicated there is a carbon monoxide detector on the property</p>
+				    <p>Host has indicated there is a smoke detector on the property</p>
+				    <p>Safety features at this property include a fire extinguisher, a first aid kit, and a deadbolt lock</p>
+				    <p class="uk-text-bold">We should mention</p>
+				    <p>This property does not have elevators</p>
+				    <p>A car is recommended for transportation to and from this property</p>
+				</div>
+			    </div><!-- END Important Info -->
+			    <div id="faq-section" class="uk-width-1-1" uk-grid> <!-- START FAQ-->
+				<h3 class="uk-width-1-1 uk-width-1-3@m">Frequently Asked Questions</h3>
+				<ul class="uk-width-1-1 uk-width-2-3@m" uk-accordion="multiple:true">
+				    <li>
+					<a class="uk-accordion-title" href>Is Large Family home with 5 bedrooms and private hot tub pet-friendly?</a>
+					<div class="uk-accordion-content">
+					    <p>No, pets are not allowed at this property.</p>
+					</div>
+				    </li>
+				    <li>
+					<a class="uk-accordion-title" href>What time is check-in at Large Family home with 5 bedrooms and private hot tub?</a>
+					<div class="uk-accordion-content">
+					    <p>Check-in begins at 4:00 PM.</p>
+					</div>
+				    </li>
+				    <li>
+					<a class="uk-accordion-title" href>What time is check-out at Large Family home with 5 bedrooms and private hot tub?</a>
+					<div class="uk-accordion-content">
+					    <p>Check-out is at 10:00 AM.</p>
+					</div>
+				    </li>
+				    <li>
+					<a class="uk-accordion-title" href>Where is Large Family home with 5 bedrooms and private hot tub located?</a>
+					<div class="uk-accordion-content">
+					    <p>Located in Peak 8, this vacation home is within a 15-minute walk of Breckenridge Nordic Center and Breckenridge Ski Resort. Main Street is 1.2 mi (1.9 km) away. </p>
+					</div>
+				    </li>
+				</ul>
+			    </div><!-- END FAQ -->
+			</div>
+		    </div>
+		    <div id="review-section" class="uk-width-1-1" uk-grid> <!-- START reviews-->
+			<div class="uk-width-1-1 uk-width-1-3@m">
+			    <h3><span style="color: #227950; font-size: 41px;">9.8/10</span><br /> Exceptional on VRBO</h3>
+			    <p>100+ reviews</p>
+			</div>
+			<div class="uk-width-1-1 uk-width-2-3@m">
+			    <h4>Recent Reviews</h4>
+			    <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slider>
+				<div class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@m" uk-height-match="target: > div > .uk-card">
+				    <div>
+					<div class="uk-card uk-card-default uk-card-body">
+					    <h5 class="uk-card-title">10/10 Excellent</h5>
+					    <p><i class="fa-light fa-face-smile"></i> Liked: Liked: Cleanliness, check-in, communication, location, listing accuracy</p>
+					    <h5>Beautiful family home</h5>
+					    <p>The house was perfect for a family gathering. We liked that it had two levels so the kids could have a separate play area or my son-in-law could work. The bedrooms are nice and large with king beds and a private bathroom. The kitchen and dining area was really nice. We would definitely rent this again. </p>
+					    <p class="uk-text-bold">Diane M.</p>
+					    <p>4 nights in july 2024</p>
+					</div>
+				    </div>
+				    <div>
+					<div class="uk-card uk-card-default uk-card-body">
+					    <h5 class="uk-card-title">10/10 Excellent</h5>
+					    <p><i class="fa-light fa-face-smile"></i> Liked: Liked: Cleanliness, check-in, communication, location, listing accuracy</p>
+					    <h5 class="uk-text-bold">Breckinridge Trip</h5>
+					    <p>We had a wonderful stay. The property is in a great location and close to everything. Both kitchens are well stocked. The beds are comfortable and we were happy to find equipment for our grand daughter to use like the high chair and portable crib. We travel a lot and this was one of the best homes we have rented.</p>
+					    <p class="uk-text-bold">Robert H.</p>
+					    <p>5 nights in July 2024</p>
+					</div>
+				    </div>
+				    <div>
+					<div class="uk-card uk-card-default uk-card-body">
+					    <h5 class="uk-card-title">10/10 Excellent</h5>
+					    <p><i class="fa-light fa-face-smile"></i> Liked: Cleanliness, check-in, communication, location, listing accuracy</p>
+					    <h5 class="uk-text-bold">Spring Ski Trip</h5>
+					    <p>Great house in perfect location with all the amenities, would highly recommend</p>
+					    <p class="uk-text-bold">Robert H.</p>
+					    <p>7 nights in march 2024</p>
+					</div>
+				    </div>
+				    <div>
+					<div class="uk-card uk-card-default uk-card-body">
+					    <h5 class="uk-card-title">10/10 Excellent</h5>
+					    <p><i class="fa-light fa-face-smile"></i> Liked: Cleanliness, check-in, communication, location, listing accuracy</p>
+					    <h5 class="uk-text-bold">What a fabulous proprty!</h5>
+					    <p>The house is beautiful and so spacious! We were a group of 4 couples and 1 single. The couples each had their own king room and plenty of common space so that we didn't feel like we were on top of each other. The house is very convenient to the bus stop, Peak 8, and into town is a short drive. I would definitely recommend this property!</p>
+					    <p class="uk-text-bold">Jusie T.</p>
+					    <p>Stayed 5 nights in Feb 2024</p>
+					</div>
+				    </div>
+				    <div>
+					<div class="uk-card uk-card-default uk-card-body">
+					    <h5 class="uk-card-title">10/10 Excellent</h5>
+					    <p><i class="fa-light fa-face-smile"></i> Liked: Cleanliness, check-in, communication, location, listing accuracy</p>
+					    <h5 class="uk-text-bold">Incredible location</h5>
+					    <p>This property was absolutely perfect! It was even better than it appeared in photos. We traveled with a group of friends and we had more than enough space. The location was perfect! Convenient to the mountain and the village with easy travel even in the snow. We would definitely stay again and hope to do so in the future!!</p>
+					    <p class="uk-text-bold">Heather C.</p>
+					    <p>Stayed 4 nights in Feb 2023</p>
+					</div>
+				    </div>
+				    <div>
+					<div class="uk-card uk-card-default uk-card-body">
+					    <h5 class="uk-card-title">10/10 Excellent</h5>
+					    <p><i class="fa-light fa-face-smile"></i> Liked: Cleanliness, check-in, communication, location, listing accuracy</p>
+					    <h5 class="uk-text-bold">Awesome location and multi-family home</h5>
+					    <p>The location was very close to Peak 8, the market and other desirable destinations. It was wonderful to have 4 king beds for our multi-family visitors to choose from… plus the hot tub. Owner was super responsive too!</p>
+					    <p class="uk-text-bold">Michelle M.</p>
+					    <p>Stayed 9 nights in Jan 2023</p>
+					</div>
+				    </div>
+				    <div>
+					<div class="uk-card uk-card-default uk-card-body">
+					    <h5 class="uk-card-title">10/10 Excellent</h5>
+					    <p><i class="fa-light fa-face-smile"></i> Liked: Cleanliness, check-in, communication, location, listing accuracy</p>
+					    <h5 class="uk-text-bold">Wonderful stay in Breck</h5>
+					    <p>We had a wonderful time in this beautiful house. We were 2 families with adult children meeting us. The house is laid out really well and we all had our own space. Kitchen is well equipped even though we ate out most meals. The snow boarders in the group walked to the mtn and the skiers usually got dropped by our friend who didn’t ski. House is in great location. All in all it was a fabulous trip. T</p>
+					    <p class="uk-text-bold">Heather M.</p>
+					    <p>Stayed 6 nights in Feb 2022</p>
+					</div>
+				    </div>
+				</div>
+				<a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+				<a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+			    </div>
+			    <button class="uk-button uk-button-default">See all vrbo reviews</button>
+			</div>
+		    </div><!-- END review -->
+		    <!--{{content}}-->
+	    </section>
+
+	</article>
     </main>
-<script>
-// Initialize and add the map
-let map;
+    <script>
+	// Initialize and add the map
+	let map;
 
 async function initMap() {
-  // The location of Uluru
-  const position = { lat: -25.344, lng: 131.031 };
-  // Request needed libraries.
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    // The location of Uluru
+    const position = { lat: 39.482267754406756, lng: -106.062056082431};
+    // Request needed libraries.
+    //@ts-ignore
+    const { Map } = await google.maps.importLibrary("maps");
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-  // The map, centered at Uluru
-  map = new Map(document.getElementById("map"), {
-    zoom: 4,
-    center: position,
-    mapId: "DEMO_MAP_ID",
-  });
+    // The map, centered at Uluru
+    map = new Map(document.getElementById("map"), {
+	zoom: 14,
+	center: position,
+	mapId: "DEMO_MAP_ID",
+    });
 
-  // The marker, positioned at Uluru
-  const marker = new AdvancedMarkerElement({
-    map: map,
-    position: position,
-    title: "Uluru",
-  });
+    // The marker, positioned at Uluru
+    const marker = new AdvancedMarkerElement({
+	map: map,
+	position: position,
+	title: "Uluru",
+    });
 }
 
 initMap();
-</script>
+    </script>
 
 {{/post}}

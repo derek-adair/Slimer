@@ -12,6 +12,8 @@
     {{!-- Preload scripts --}}
     <link rel="preload" as="style" href="{{asset "built/screen.css"}}?v=1234" />
     <link rel="preload" as="script" href="{{asset "built/casper.js"}}" />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.9/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.3/air-datepicker.min.css">
     {{!-- Theme assets - use the {asset} helper to reference styles & scripts,
     this will take care of caching and cache-busting automatically --}}
@@ -109,6 +111,10 @@
 <script src="https://kit.fontawesome.com/645daa92f1.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.3/air-datepicker.min.js"></script>
 <script src="{{asset "built/casper.js"}}"></script>
+
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.21.9/dist/js/uikit.min.js"></script>
 <script>
 $(document).ready(function () {
     // Mobile Menu Trigger
