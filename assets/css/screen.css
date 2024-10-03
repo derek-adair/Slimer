@@ -3063,3 +3063,6 @@ html { font-size: 9px !important; }
 .my-small-modal{
     width: 700px;
 }
+
+.air-datepicker-global-container{ z-index: 981;}
+
